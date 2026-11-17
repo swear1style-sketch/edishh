@@ -1,0 +1,1502 @@
+<!doctype html>
+<!--
+  Edish Connect — Enterprise Engineering & Capability Platform
+  Copyright (c) 2026 Edish Connect. All rights reserved.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edish Connect | We build global capabilities in India</title>
+<meta name="description" content="We build global capabilities in India across engineering and specialist business functions, from a handful of experts to a full capability centre.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Edish Connect | Where Engineering Meets Execution and Inspiration">
+<meta property="og:description" content="We build global capabilities in India across engineering and specialist business functions, from a handful of experts to a full capability centre.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logos/EI-app-icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logos/EI-app-icon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logos/EI-app-icon-180.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RnONalrErE8iusq2KkpeJNBW4zg&skey=70a816dcd17c8a3c&v=v5) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RnONalrErE8iusq2KkpeJNBy4zg&skey=70a816dcd17c8a3c&v=v5) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RnONalrErE8iusq2KkpeJNBe4zg&skey=70a816dcd17c8a3c&v=v5) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RnONalrErE8iusq2KkpeJNBa4zg&skey=70a816dcd17c8a3c&v=v5) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RnONalrErE8iusq2KkpeJNBi4zg&skey=70a816dcd17c8a3c&v=v5) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-module="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-module="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #1d2e48;
+  --color-3: #1d2e48;
+  --color-4: color-mix(in srgb, #6b7585 9%, #fafaf8);
+  --color-5: #cca04a;
+  --color-6: #6b7585;
+  --color-7: color-mix(in srgb, #cca04a 70%, #1d2e48);
+  --color-8: #fafaf8;
+  --font-1: "Geist", "Geist Fallback", system-ui, Arial, sans-serif;
+  --radius-1: 999px;
+  --shadow-1: 0 40px 90px -50px color-mix(in srgb, var(--color-3) 60%, transparent);
+  --shadow-2: 0 40px 80px -30px color-mix(in srgb, var(--color-3) 45%, transparent);
+  --space-1: clamp(20px, 3vw, 44px);
+  --space-2: clamp(12px, 3.2vw, 48px);
+  --space-3: clamp(40px, 7vw, 112px);
+}
+}
+</style>
+<style data-module="base">
+@layer base {
+@font-face { font-family: "Geist Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 100.4%; ascent-override: 100.6%; descent-override: 29.9%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104.8%; ascent-override: 96.4%; descent-override: 28.6%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; background: var(--color-4); }
+html.lenis, html.lenis body {
+  margin: 0; min-height: 100vh; overflow-x: clip;
+  font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400;
+  color: var(--color-2);
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(circle at 64% 42%, transparent 0 calc(44vmax - 1px), color-mix(in srgb, var(--color-1) 60%, transparent) calc(44vmax - 1px) 44vmax, transparent calc(44vmax + 1px)),
+    radial-gradient(circle at 22% 78%, transparent 0 calc(30vmax - 1px), color-mix(in srgb, var(--color-1) 45%, transparent) calc(30vmax - 1px) 30vmax, transparent calc(30vmax + 1px)),
+    radial-gradient(55% 45% at 78% 18%, color-mix(in srgb, var(--color-1) 70%, transparent), transparent 70%),
+    radial-gradient(60% 55% at 12% 88%, color-mix(in srgb, var(--color-3) 14%, transparent), transparent 72%),
+    radial-gradient(40% 40% at 40% 55%, color-mix(in srgb, var(--color-8) 70%, transparent), transparent 70%),
+    linear-gradient(165deg, var(--color-8), var(--color-4) 45%, color-mix(in srgb, var(--color-3) 18%, var(--color-4)));
+}
+img { display: block; max-width: 100%; }
+h1, h2, h3, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+sup { font-size: .32em; vertical-align: top; position: relative; top: .35em; letter-spacing: 0; margin-left: .04em; }
+:focus-visible { outline: 2px solid var(--color-7); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-module="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 10vw, 150px); line-height: .86; font-weight: 500; letter-spacing: -0.065em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(42px, 6.4vw, 96px); line-height: .92; font-weight: 500; letter-spacing: -0.055em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 13px; line-height: 1.35; font-weight: 500; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(18px, 1.5vw, 21px); line-height: 1.38; font-weight: 400; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+
+.m-text-6 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 27px); line-height: 1.08; font-weight: 500; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(28px, 3.5vw, 50px); line-height: 1.04; font-weight: 500; letter-spacing: -0.045em; text-transform: none; font-style: normal; }
+
+.m-btn, .m-btn-2 {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; overflow: hidden;
+  border: 0; border-radius: var(--radius-1); cursor: pointer;
+  font-family: var(--font-1); font-size: 15px; line-height: 1; font-weight: 500; letter-spacing: -0.01em; text-transform: none; font-style: normal; white-space: nowrap;
+}
+.m-btn { background: var(--color-2); color: var(--color-1); }
+.m-btn__label { display: block; }
+
+.m-btn-2 { background: var(--color-5); color: var(--color-2); }
+
+@keyframes m-streak-label { 0% { transform: none; } 44% { transform: translateX(140%) skewX(-24deg); } 45% { transform: translateX(-140%) skewX(-24deg); } 100% { transform: none; } }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__label, .m-btn-2:hover .m-btn__label { animation: m-streak-label .55s cubic-bezier(.6, 0, .2, 1); }
+}
+
+.m-link {
+  display: inline; padding-bottom: 2px; color: inherit;
+  font-family: var(--font-1); font-size: 15px; line-height: 1.3; font-weight: 500; letter-spacing: -0.01em; text-transform: none; font-style: normal;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat;
+}
+@keyframes m-streak-line { 0% { background-position: 0 100%; background-size: 100% 1px; } 45% { background-position: 100% 100%; background-size: 0 1px; } 46% { background-position: 0 100%; background-size: 0 1px; } 100% { background-position: 0 100%; background-size: 100% 1px; } }
+@media (hover: hover) { .m-link:hover { animation: m-streak-line .6s cubic-bezier(.6, 0, .2, 1); } }
+
+.m-iconbtn {
+  position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; flex: none;
+  border: 1px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; isolation: isolate;
+}
+.m-iconbtn::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: 50%; background: var(--color-2); transform: scale(0); transition: transform .35s cubic-bezier(.6, 0, .2, 1); }
+.m-iconbtn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; transition: color .35s; }
+@media (hover: hover) { .m-iconbtn:hover::before { transform: scale(1); } .m-iconbtn:hover svg { color: var(--color-1); } }
+
+.m-badge {
+  display: inline-block; padding: 6px 11px; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2);
+  font-family: var(--font-1); font-size: 13px; line-height: 1.2; font-weight: 500; letter-spacing: -0.005em; text-transform: none; font-style: normal;
+}
+
+.m-slide, .m-slide-2, .m-slide-3 { position: relative; box-shadow: var(--shadow-1); }
+.m-slide { background: var(--color-1); color: var(--color-2); }
+.m-slide::before, .m-slide::after, .m-slide-2::before, .m-slide-2::after, .m-slide-3::before, .m-slide-3::after {
+  content: ""; position: absolute; width: 13px; height: 13px; pointer-events: none; z-index: 3; opacity: .7;
+  background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat;
+}
+.m-slide::before, .m-slide-2::before, .m-slide-3::before { top: 16px; right: 16px; }
+.m-slide::after, .m-slide-2::after, .m-slide-3::after { bottom: 16px; left: 16px; }
+
+.m-slide-2 { background: var(--color-3); color: var(--color-1); }
+.m-slide-2 :focus-visible { outline-color: var(--color-1); }
+
+.m-slide-3 { background: linear-gradient(140deg, var(--color-1), var(--color-8) 55%, var(--color-4)); color: var(--color-2); }
+
+.m-orb {
+  display: block; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, var(--color-1) 0 7%, var(--color-8) 26%, var(--color-5) 76%, color-mix(in srgb, var(--color-5) 82%, var(--color-3)) 100%);
+  box-shadow: var(--shadow-2);
+}
+
+.brand-lockup { display: block; aspect-ratio: 1422 / 302; overflow: hidden; }
+.brand-lockup img { width: calc(100% * 1824 / 1422); max-width: none; height: auto; margin: calc(-100% * 160 / 1422) 0 0 calc(-100% * 192 / 1422); }
+
+.m-chip { display: block; aspect-ratio: 1; width: 1em; height: auto; border-radius: 50%; object-fit: cover; filter: saturate(.5); }
+
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; line-height: 1.35; font-weight: 500; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-6); }
+.m-field input, .m-field select, .m-field textarea {
+  width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid color-mix(in srgb, var(--color-2) 35%, transparent); border-radius: 0; background: var(--color-8); color: var(--color-2);
+  font-family: var(--font-1); font-size: 16px; line-height: 1.4; font-weight: 400; letter-spacing: -0.005em; text-transform: none; font-style: normal;
+}
+.m-field textarea { min-height: 112px; resize: vertical; }
+.m-field input[type="file"] { padding: 11px 14px; cursor: pointer; }
+.m-field :focus-visible { outline-offset: 0; border-color: var(--color-7); }
+}
+</style>
+<style data-module="layout">
+@layer layout {
+main { overflow-x: clip; }
+.l-sec { position: relative; padding-inline: var(--space-2); margin-top: var(--space-3); }
+}
+</style>
+<style data-module="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto 0; z-index: 50; pointer-events: none; }
+#navigation .nav__bar {
+  pointer-events: auto; margin: 12px var(--space-2) 0; height: 56px; padding: 0 8px 0 20px;
+  display: flex; align-items: center; gap: 24px;
+  background: color-mix(in srgb, var(--color-8) 94%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-1); box-shadow: var(--shadow-1);
+  transition: transform .45s cubic-bezier(.6, 0, .2, 1);
+}
+#navigation .nav__bar[data-hidden] { transform: translateY(calc(-100% - 16px)); }
+#navigation .nav__logo { flex: none; height: 46px; }
+#navigation .nav__logo img { mix-blend-mode: multiply; }
+#navigation .nav__line { color: var(--color-6); white-space: nowrap; }
+#navigation .nav__links { display: flex; gap: 22px; margin-left: auto; }
+#navigation .nav__links .m-link { background-size: 0 1px; }
+#navigation .nav__cta { min-height: 40px; padding: 0 18px; }
+#navigation .nav__menu { display: none; }
+#navigation .menu {
+  pointer-events: auto; position: fixed; inset: 0; z-index: 2; padding: 84px var(--space-2) var(--space-2); overflow-y: auto;
+  background: var(--color-3); color: var(--color-1);
+}
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__close { position: absolute; top: 18px; right: var(--space-2); }
+#navigation .menu__mark { position: absolute; top: 26px; left: var(--space-2); width: 26px; height: auto; }
+#navigation .menu__links { display: grid; gap: 4px; }
+#navigation .menu__links a { display: block; padding: 6px 0; font-size: clamp(40px, 12vw, 64px); line-height: 1; }
+#navigation .menu__cta { margin-top: 32px; }
+@media (max-width: 1360px) { #navigation .nav__line { display: none; } }
+@media (max-width: 900px) {
+  #navigation .nav__links, #navigation .nav__cta { display: none; }
+  #navigation .nav__menu { display: inline-grid; margin-left: auto; }
+  #navigation .nav__bar { padding-right: 6px; }
+}
+}
+</style>
+<style data-module="section:hero">
+@layer sections {
+#hero { position: relative; }
+#hero .op-s1 { position: sticky; top: 0; height: 100svh; padding: 84px var(--space-2) var(--space-2); }
+#hero .op-ground {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-3) 30%, transparent), color-mix(in srgb, var(--color-3) 10%, transparent) 70%, transparent);
+}
+#hero .op-frame { position: relative; height: 100%; }
+#hero .op-slide { position: relative; height: 100%; overflow: hidden; container-type: inline-size; }
+#hero .op-photo { position: absolute; inset: 0 42% 0 0; overflow: hidden; }
+#hero .op-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 60%; filter: saturate(.35) contrast(1.1) brightness(.85); }
+#hero .op-photo img, #hero .op-cap li { opacity: 0; transition: opacity 1.2s ease; }
+#hero .op-photo img.is-on, #hero .op-cap li.is-on { opacity: 1; }
+#hero .op-photo::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--color-3) 58%, transparent) 0%, color-mix(in srgb, var(--color-3) 66%, transparent) 70%, var(--color-3) 100%);
+}
+#hero .op-dim { position: absolute; inset: 0; z-index: 4; background: var(--color-3); opacity: 0; pointer-events: none; }
+#hero .op-ring {
+  position: absolute; z-index: 1; width: 64cqw; aspect-ratio: 1; left: 50%; top: 50%; margin: -32cqw 0 0 -24cqw;
+  border: 1px solid color-mix(in srgb, var(--color-1) 28%, transparent); border-radius: 50%; pointer-events: none;
+}
+#hero .op-ring__orb { position: absolute; width: 4.6cqw; left: 50%; top: 0; margin: -2.3cqw 0 0 -2.3cqw; }
+#hero .op-title { position: absolute; z-index: 2; left: 5.5%; top: 14%; right: 3%; color: var(--color-1); font-size: calc(10.4cqw * var(--op-fit, 1)); }
+#hero .op-line { display: block; width: max-content; max-width: 100%; font-size: min(1em, calc(86cqw / (var(--len) * .52))); }
+#hero .op-line--2 { margin-left: 2.7em; color: var(--color-5); }
+#hero .op-line--3 { margin-left: 1.25em; }
+#hero .op-line__in { display: block; }
+#hero .op-meta { position: absolute; z-index: 2; right: var(--space-1); bottom: var(--space-1); width: min(400px, 36%); display: grid; gap: 22px; }
+#hero .op-meta .m-text-5 { color: var(--color-1); }
+#hero .op-meta .op-tag { color: var(--color-5); }
+#hero .op-meta .op-more { color: color-mix(in srgb, var(--color-1) 78%, transparent); }
+#hero .op-meta.is-compact .op-more { display: none; }
+@media (max-height: 480px) { #hero .op-meta .op-tag { display: none; } }
+#hero .op-cap { position: absolute; z-index: 2; left: var(--space-1); bottom: var(--space-1); width: min(320px, 34%); display: grid; color: var(--color-1); }
+#hero .op-cap li { grid-area: 1 / 1; align-self: end; display: grid; gap: 4px; padding-left: 14px; border-left: 2px solid var(--color-5); }
+#hero .op-cap .m-text-4 { color: var(--color-5); }
+#hero .op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+#hero .op-actions .m-btn-2 { min-height: 53px; padding: 0 27px; font-size: 16.5px; }
+#hero .op-s2 { position: relative; z-index: 2; min-height: 100svh; padding: 84px var(--space-2) var(--space-2); display: flex; }
+#hero .op-card {
+  position: relative; width: 74%; min-height: calc(100svh - 84px - var(--space-2)); padding: var(--space-1);
+  display: grid; grid-template-rows: auto minmax(120px, 1fr) auto; gap: 24px; container-type: inline-size;
+}
+#hero .op-title2 { position: relative; z-index: 2; font-size: min(15cqw, calc(92cqw / (var(--len) * .5))); }
+#hero .op-orb { position: absolute; z-index: 1; width: clamp(220px, 27vw, 400px); right: -9%; top: 27%; }
+#hero .op-chip { position: relative; z-index: 2; grid-row: 2; align-self: center; justify-self: center; font-size: clamp(72px, 7vw, 104px); }
+#hero .op-cols { position: relative; z-index: 2; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 28px; max-width: 660px; }
+#hero .op-cols .m-text { color: var(--color-6); }
+#hero .op-cols .m-link { grid-column: 1 / -1; justify-self: start; }
+#hero .op-cols .op-close { grid-column: 1 / -1; }
+#hero .op-cols .op-quote { grid-column: 1 / -1; padding-top: 18px; border-top: 1px solid var(--color-5); color: var(--color-2); }
+@media (max-width: 767px) {
+  #hero .op-s1 { padding-top: 76px; }
+  #hero .op-photo { inset: 0 0 46% 0; }
+  #hero .op-photo::after { background: linear-gradient(180deg, color-mix(in srgb, var(--color-3) 30%, transparent), color-mix(in srgb, var(--color-3) 64%, transparent) 42%, color-mix(in srgb, var(--color-3) 72%, transparent) 75%, var(--color-3)); }
+  #hero .op-ring { width: 120cqw; margin: -60cqw 0 0 -70cqw; top: 46%; }
+  #hero .op-ring__orb { width: 9cqw; margin: -4.5cqw 0 0 -4.5cqw; }
+  #hero .op-title { top: 30%; left: 6%; font-size: calc(15.5cqw * var(--op-fit, 1)); }
+  #hero .op-line { font-size: min(1em, calc(88cqw / (var(--len) * .52))); }
+  #hero .op-line--2 { margin-left: 1.3em; }
+  #hero .op-line--3 { margin-left: .6em; }
+  #hero .op-meta { left: var(--space-1); width: auto; gap: 14px; }
+  #hero .op-meta .op-more { display: none; }
+  #hero .op-cap { top: var(--space-1); bottom: auto; right: var(--space-1); width: auto; }
+  #hero .op-cap li { align-self: start; }
+  #hero .op-s2 { padding-top: 76px; }
+  #hero .op-card { width: 100%; min-height: calc(100svh - 76px - var(--space-2)); }
+  #hero .op-title2 { font-size: min(19cqw, calc(92cqw / (var(--len) * .5))); }
+  #hero .op-card { padding-bottom: 44px; }
+  #hero .op-orb { width: 62vw; right: -22%; top: 19%; }
+  #hero .op-chip { font-size: 64px; justify-self: start; }
+  #hero .op-cols { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes op-frame-in { from { clip-path: inset(3% 2.5% 3% 2.5%); } to { clip-path: inset(0); } }
+  @keyframes op-line-in { from { transform: translateX(-.45em); } to { transform: none; } }
+  @keyframes op-orbit { to { transform: rotate(360deg); } }
+  @keyframes op-pan { from { transform: scale(1.04) translateX(0); } to { transform: scale(1.12) translateX(-3%); } }
+  #hero .op-frame { animation: op-frame-in 1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #hero .op-line__in { animation: op-line-in 1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #hero .op-line--2 .op-line__in { animation-delay: .08s; }
+  #hero .op-line--3 .op-line__in { animation-delay: .16s; }
+  #hero .op-ring { animation: op-orbit 26s linear infinite; }
+  #hero .op-photo img { animation: op-pan 9s ease-in-out infinite alternate; }
+  #hero .op-s1[data-paused] .op-ring, #hero .op-s1[data-paused] .op-photo img { animation-play-state: paused; }
+}
+}
+</style>
+<style data-module="section:culture">
+@layer sections {
+#culture { position: relative; overflow: hidden; }
+#culture .mt-slide { width: min(100%, 1180px); margin-left: auto; display: grid; grid-template-columns: minmax(240px, 30%) 1fr; min-height: 620px; }
+#culture .mt-side { position: relative; overflow: hidden; padding: var(--space-1); display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(165deg, var(--color-8), var(--color-4)); }
+#culture .mt-orb { display: none; }
+#culture .mt-steps { position: relative; display: grid; gap: 22px; }
+#culture .mt-steps li { display: grid; grid-template-columns: 30px 1fr; gap: 6px 10px; }
+#culture .mt-num { grid-row: span 2; padding-top: 5px; color: var(--color-6); }
+#culture .mt-steps .m-text { color: var(--color-6); font-size: 15px; }
+#culture .mt-main { padding: calc(var(--space-1) + 12px) var(--space-1) var(--space-1) clamp(24px, 4vw, 64px); display: grid; grid-template-rows: auto auto; align-content: start; gap: 48px; }
+#culture .mt-title { font-size: clamp(34px, 6.1vw, 92px); }
+#culture .mt-row { display: block; white-space: nowrap; }
+#culture .mt-row:nth-child(2) { padding-left: 1.3em; }
+#culture .mt-row:nth-child(3) { padding-left: .55em; }
+#culture .mt-gap { display: inline-flex; align-items: center; justify-content: center; vertical-align: -0.06em; width: 1.05em; margin: 0 0.08em; line-height: 1; }
+#culture .mt-chip { width: 0.88em; height: 0.88em; aspect-ratio: 1; border-radius: 50%; object-fit: cover; display: block; vertical-align: middle; will-change: transform, opacity; }
+#culture .mt-after { display: inline-block; will-change: transform; }
+#culture .mt-foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px 40px; }
+#culture .mt-foot .m-text-5 { max-width: 470px; }
+#culture .mt-copy { display: grid; gap: 14px; max-width: 560px; }
+#culture .mt-copy .m-text { color: var(--color-6); }
+@media (max-width: 860px) {
+  #culture .mt-slide { grid-template-columns: 1fr; min-height: 0; }
+  #culture .mt-side { order: 2; padding-top: 140px; }
+  #culture .mt-orb { width: 120px; left: auto; right: var(--space-1); top: var(--space-1); }
+  #culture .mt-title { font-size: clamp(28px, 8.2vw, 56px); }
+  #culture .mt-main { padding: 36px var(--space-1) var(--space-1); gap: 32px; }
+  #culture .mt-foot { flex-direction: column; align-items: flex-start; }
+}
+}
+</style>
+<style data-module="section:capabilities">
+@layer sections {
+#capabilities .ds-slide { padding: var(--space-1); container-type: inline-size; }
+#capabilities .ds-title .ds-break { flex-basis: 100%; height: 0; }
+#capabilities .ds-title { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 0 .3em; padding: 18px 0 clamp(28px, 4vw, 56px); font-size: calc(min(9.6cqw, calc(88cqw / (var(--len) * .34))) * .95); }
+#capabilities .ds-grid {
+  position: relative; display: grid; gap: clamp(10px, 1.3vw, 18px);
+  grid-template-columns: repeat(6, 1fr); grid-auto-rows: clamp(110px, 11.5vw, 150px);
+  grid-template-areas:
+    "lift mark run run copy ride"
+    "swim swim run run copy ride"
+    "swim swim run run kit ride"
+    "note note court court link .";
+}
+#capabilities .ds-tile { position: relative; overflow: hidden; background: var(--color-8); }
+#capabilities .ds-tile img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.45) contrast(1.04); }
+#capabilities .ds-tile .m-badge { position: absolute; left: 10px; bottom: 10px; }
+#capabilities .ds-tile--lift { grid-area: lift; }
+#capabilities .ds-tile--mark { grid-area: mark; display: grid; place-items: center; color: var(--color-6); }
+#capabilities .ds-tile--mark svg { width: 22px; height: 22px; stroke: currentColor; stroke-width: 1.2; fill: none; }
+#capabilities .ds-tile--run { grid-area: run; }
+#capabilities .ds-tile--ride { grid-area: ride; }
+#capabilities .ds-tile--swim { grid-area: swim; }
+#capabilities .ds-tile--kit { grid-area: kit; }
+#capabilities .ds-tile--court { grid-area: court; }
+#capabilities .ds-tile--link { grid-area: link; display: grid; align-content: space-between; padding: 14px; background: color-mix(in srgb, var(--color-5) 35%, var(--color-8)); }
+#capabilities .ds-tile--link svg { width: 52px; height: 52px; stroke: var(--color-2); stroke-width: 1; fill: none; }
+#capabilities .ds-copy { grid-area: copy; display: grid; align-content: start; gap: 12px; padding-top: 4px; position: relative; z-index: 9; background: var(--color-1); }
+#capabilities .ds-copy .m-text { font-size: 14px; color: var(--color-6); }
+#capabilities .ds-note { grid-area: note; align-self: end; max-width: 380px; }
+#capabilities .ds-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 40px clamp(24px, 4vw, 64px); padding-top: clamp(48px, 6vw, 88px); }
+#capabilities .ds-pillar { display: grid; gap: 14px; align-content: start; }
+#capabilities .ds-pillar > .m-text { color: var(--color-6); max-width: 520px; }
+#capabilities .ds-list { display: grid; margin-top: 8px; border-top: 1px solid var(--color-5); }
+#capabilities .ds-list li { display: grid; grid-template-columns: 34px 1fr; gap: 2px 10px; padding: 14px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent); }
+#capabilities .ds-list .m-text-4 { grid-row: span 2; padding-top: 3px; color: var(--color-6); }
+#capabilities .ds-list h4 { margin: 0; font-weight: 500; }
+#capabilities .ds-list p { font-size: 15px; color: var(--color-6); }
+#capabilities .ds-pillar .ds-caveat { font-size: 14px; padding-top: 6px; }
+@media (hover: hover) { #capabilities .ds-tile--link:hover { background: var(--color-5); } }
+@media (max-width: 860px) {
+  #capabilities .ds-title { flex-wrap: wrap; justify-content: flex-start; gap: 0 .3em; font-size: 11cqw; }
+  #capabilities .ds-grid {
+    grid-template-columns: 1fr 1fr; grid-auto-rows: 118px;
+    grid-template-areas: "run run" "run run" "lift mark" "swim swim" "ride kit" "ride link" "court court" "copy copy" "note note";
+  }
+  #capabilities .ds-copy, #capabilities .ds-note { padding-top: 12px; }
+  #capabilities .ds-grid > .ds-copy, #capabilities .ds-grid > .ds-note { grid-row: auto; }
+  #capabilities .ds-pillars { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-module="section:process">
+@layer sections {
+#council .lb-slide { width: min(100%, 1180px); margin-left: auto; padding: var(--space-1); display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 32px; align-items: center; }
+#council .lb-text { display: grid; gap: 22px; align-content: start; justify-items: start; padding: 18px 0; }
+#council .lb-text .m-text { color: var(--color-5); max-width: 420px; }
+#council .lb-stage { position: relative; width: min(100%, 640px); justify-self: center; aspect-ratio: 1; container-type: inline-size; }
+#council .lb-lens { position: absolute; inset: 20cqw; overflow: hidden; clip-path: circle(50% at 50% 50%); }
+#council .lb-lens img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; filter: saturate(.5); }
+#council .lb-ring { position: absolute; inset: 4cqw; width: 92cqw; height: 92cqw; overflow: visible; }
+#council .lb-ring circle { fill: none; stroke: color-mix(in srgb, var(--color-1) 35%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 1; stroke-dashoffset: 0; }
+#council .lb-note {
+  position: absolute; left: 50%; top: 50%; width: 30cqw; padding: 10px 12px; display: grid; gap: 4px;
+  background: var(--color-3); transform-origin: 0 0;
+  transform: rotate(var(--a)) translateX(46cqw) rotate(calc(var(--a) * -1)) translate(-50%, -50%);
+}
+#council .lb-note .m-text-6 { font-size: clamp(17px, 1.6vw, 22px); }
+#council .lb-note .m-text-4 { color: var(--color-5); }
+#council .lb-more { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px clamp(24px, 4vw, 64px); margin-top: 16px; padding-top: 32px; border-top: 1px solid color-mix(in srgb, var(--color-1) 25%, transparent); }
+#council .lb-more > div { display: grid; gap: 16px; align-content: start; }
+#council .lb-more .m-text { color: color-mix(in srgb, var(--color-1) 78%, transparent); }
+#council .lb-list { display: grid; border-top: 1px solid color-mix(in srgb, var(--color-1) 25%, transparent); }
+#council .lb-list--2 { grid-template-columns: 1fr 1fr; column-gap: 24px; }
+#council .lb-list li { padding: 10px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 14%, transparent); }
+#council .lb-list--2 li { color: var(--color-1); }
+#council .lb-more .lb-close { grid-column: 1 / -1; max-width: 640px; color: var(--color-5); }
+@media (max-width: 860px) {
+  #council .lb-slide { grid-template-columns: 1fr; }
+  #council .lb-stage { width: 100%; aspect-ratio: auto; display: grid; gap: 16px; }
+  #council .lb-lens { position: relative; inset: auto; width: 76cqw; aspect-ratio: 1; margin: 12cqw auto; }
+  #council .lb-ring { inset: 0 auto auto 4cqw; }
+  #council .lb-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  #council .lb-more, #council .lb-list--2 { grid-template-columns: 1fr; }
+  #council .lb-note { position: static; width: auto; transform: none; padding: 12px 0 0; border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+}
+}
+</style>
+<style data-module="section:growth">
+@layer sections {
+#approach { padding-inline: 0; }
+#approach .wk-stage { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); padding: 84px 0 var(--space-2); min-height: 100svh; align-content: center; }
+#approach .wk-head { padding-inline: var(--space-2); display: grid; grid-template-columns: 1fr; gap: 20px 48px; align-items: start; }
+#approach .wk-view { min-width: 0; overflow-x: auto; padding-inline: var(--space-2); }
+#approach[data-scrubbed] { height: var(--wk-height, auto); }
+#approach[data-scrubbed] .wk-stage { position: sticky; top: 0; }
+#approach[data-scrubbed] .wk-view { overflow: visible; }
+#approach .wk-track { display: flex; gap: clamp(12px, 1.6vw, 24px); width: max-content; padding-bottom: 8px; }
+#approach .wk-day { width: clamp(250px, 24vw, 330px); min-height: clamp(360px, 46vh, 440px); padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+#approach .wk-name { color: var(--color-6); }
+#approach .wk-intro { display: grid; gap: 14px; max-width: 680px; }
+#approach .wk-stair { margin-top: auto; height: 96px; display: grid; grid-template-columns: repeat(5, 1fr); align-items: end; gap: 4px; }
+#approach .wk-stair i { display: block; background: color-mix(in srgb, var(--color-3) 10%, transparent); }
+#approach .wk-stair i:nth-child(1) { height: 20%; } #approach .wk-stair i:nth-child(2) { height: 40%; } #approach .wk-stair i:nth-child(3) { height: 60%; } #approach .wk-stair i:nth-child(4) { height: 80%; } #approach .wk-stair i:nth-child(5) { height: 100%; }
+#approach .wk-stair[data-lv="2"] i:nth-child(-n+1), #approach .wk-stair[data-lv="3"] i:nth-child(-n+2), #approach .wk-stair[data-lv="4"] i:nth-child(-n+3), #approach .wk-stair[data-lv="5"] i:nth-child(-n+4) { background: var(--color-3); }
+#approach .wk-stair[data-lv="1"] i:nth-child(1), #approach .wk-stair[data-lv="2"] i:nth-child(2), #approach .wk-stair[data-lv="3"] i:nth-child(3), #approach .wk-stair[data-lv="4"] i:nth-child(4), #approach .wk-stair[data-lv="5"] i:nth-child(5) { background: var(--color-5); }
+#approach .wk-day .m-text { color: var(--color-6); font-size: 15px; }
+#approach .wk-time { color: var(--color-2); font-weight: 500; }
+#approach .wk-progress { margin-inline: var(--space-2); height: 1px; background: color-mix(in srgb, var(--color-2) 18%, transparent); }
+#approach .wk-progress span { display: block; height: 100%; background: var(--color-2); transform-origin: 0 50%; }
+@media (max-width: 860px) {
+  #approach .wk-head { grid-template-columns: 1fr; }
+  #approach .wk-day { width: 78vw; min-height: 380px; }
+}
+}
+</style>
+<style data-module="section:heritage">
+@layer sections {
+#heritage .st-slide { width: min(100%, 1040px); padding: var(--space-1); display: grid; gap: clamp(36px, 5vw, 72px); }
+#heritage .st-label { padding-top: 6px; color: var(--color-6); }
+#heritage .st-chip { display: inline-block; font-size: 1.15em; vertical-align: -.26em; margin-right: .12em; }
+#heritage .st-main { display: grid; gap: 20px; max-width: 900px; }
+#heritage .st-main figcaption { color: var(--color-6); }
+#heritage .st-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 48px; max-width: 760px; margin-left: auto; padding-top: 24px; border-top: 1px solid var(--color-5); }
+#heritage .st-notes li { display: grid; gap: 8px; }
+#heritage .st-notes .m-text-4 { color: var(--color-6); }
+#heritage .st-notes strong { font-weight: 500; color: var(--color-2); }
+#heritage .st-intro, #heritage .st-group, #heritage .st-close { width: 100%; max-width: 760px; margin-left: auto; }
+#heritage .st-main .m-text-7 { font-size: clamp(24px, 2.5vw, 36px); line-height: 1.18; letter-spacing: -0.03em; }
+#heritage .st-intro { color: var(--color-6); font-size: clamp(19px, 1.7vw, 24px); line-height: 1.4; max-width: 900px; margin-left: 0; }
+#heritage .st-group { display: grid; gap: 16px; }
+#heritage .st-group .st-notes { max-width: none; }
+#heritage .st-fine { font-size: 14px; color: var(--color-6); }
+@media (max-width: 860px) { #heritage .st-notes { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-module="section:models">
+@layer sections {
+:is(#models, #industries) .mb-slide { width: min(100%, 1180px); margin-left: auto; padding: var(--space-1); overflow: hidden; }
+:is(#models, #industries) .mb-ring { position: absolute; width: min(560px, 80vw); left: -14%; bottom: -30%; pointer-events: none; }
+:is(#models, #industries) .mb-ring circle { fill: none; stroke: var(--color-5); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 1; stroke-dashoffset: 0; }
+:is(#models, #industries) .mb-head { position: relative; display: grid; grid-template-columns: 1fr; gap: 20px 48px; align-items: start; padding: 18px 0 clamp(32px, 4vw, 56px); }
+:is(#models, #industries) .mb-head .m-text-5 { color: var(--color-6); max-width: 680px; }
+:is(#models, #industries) .mb-plans { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--color-5); }
+:is(#models, #industries) .mb-plan { display: flex; flex-direction: column; gap: 18px; padding: 24px; background: var(--color-1); }
+:is(#models, #industries) .mb-plan + .mb-plan { border-left: 1px solid var(--color-5); }
+:is(#models, #industries) .mb-plan:nth-child(3n+1) { border-left: 0; }
+:is(#models, #industries) .mb-plan:nth-child(n+4) { border-top: 1px solid var(--color-5); }
+:is(#models, #industries) .mb-plan .m-link { align-self: flex-start; }
+:is(#models, #industries) .mb-note { position: relative; display: grid; gap: 12px; max-width: 680px; padding-top: clamp(28px, 4vw, 48px); }
+:is(#models, #industries) .mb-note .m-text { color: var(--color-6); }
+#industries .mb-plan { background: transparent; }
+#industries .mb-head .m-text-3 { font-size: clamp(36px, 4.6vw, 72px); }
+:is(#models, #industries) .mb-plan--featured { background: var(--color-3); color: var(--color-1); border-left-color: var(--color-3); }
+:is(#models, #industries) .mb-plan--featured :focus-visible { outline-color: var(--color-1); }
+:is(#models, #industries) .mb-price { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+#models .mb-price .m-text-4 { font-size: 12px; line-height: 1; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--color-7); }
+#models .mb-plan--featured .mb-price .m-text-4 { color: var(--color-5); }
+:is(#models, #industries) .mb-price .m-text-3 { font-size: clamp(34px, 3.3vw, 48px); line-height: 1; white-space: nowrap; }
+:is(#models, #industries) .mb-head h2 { text-wrap: balance; }
+@media (min-width: 861px) { :is(#models, #industries) .mb-plan h3 { min-height: 2.16em; } }
+#models .mb-plan h3 { min-height: 0; }
+:is(#models, #industries) .mb-for { color: var(--color-6); }
+:is(#models, #industries) .mb-plan--featured .mb-for { color: var(--color-5); }
+:is(#models, #industries) .mb-inc { display: grid; margin-bottom: auto; }
+:is(#models, #industries) .mb-inc li { padding: 10px 0; border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent); font-size: 15px; }
+:is(#models, #industries) .mb-plan .m-btn, :is(#models, #industries) .mb-plan .m-btn-2 { align-self: flex-start; }
+@media (max-width: 860px) {
+  :is(#models, #industries) .mb-head { grid-template-columns: 1fr; }
+  :is(#models, #industries) .mb-plans { grid-template-columns: 1fr; }
+  :is(#models, #industries) .mb-plan + .mb-plan { border-left: 0; border-top: 1px solid var(--color-5); }
+}
+}
+</style>
+<style data-module="section:faq">
+@layer sections {
+#faq .fq-slide { width: min(100%, 1080px); padding: var(--space-1); }
+#faq .fq-head { display: grid; grid-template-columns: 1fr; gap: 20px 48px; align-items: start; padding: 18px 0 clamp(32px, 4vw, 56px); }
+#faq .fq-head .m-text { color: var(--color-6); max-width: 680px; }
+#faq .fq-proof { display: grid; gap: clamp(36px, 5vw, 64px); padding-bottom: 20px; }
+#faq .fq-pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px clamp(16px, 2.4vw, 32px); }
+#faq .fq-pillars li { display: grid; gap: 8px; align-content: start; padding-top: 16px; border-top: 2px solid var(--color-5); }
+#faq .fq-pillars .m-text-4 { color: var(--color-6); }
+#faq .fq-pillars .m-text { font-size: 15px; color: var(--color-6); }
+#faq .fq-cases { display: grid; gap: 20px; }
+#faq .fq-cases__head { display: grid; grid-template-columns: 1fr; gap: 12px 48px; align-items: start; }
+#faq .fq-cases__head .m-text { color: var(--color-6); max-width: 680px; }
+#faq .fq-cases__head h3 { font-size: clamp(30px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.045em; }
+#faq .fq-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 1.6vw, 20px); }
+#faq .fq-card { display: flex; flex-direction: column; gap: 14px; padding: 22px; background: var(--color-1); border-top: 3px solid var(--color-3); box-shadow: var(--shadow-1); }
+#faq .fq-card .fq-tag { color: var(--color-6); }
+#faq .fq-card h4 { margin: 0; }
+#faq .fq-card dl { display: grid; gap: 12px; margin: 0; }
+#faq .fq-card dl div { display: grid; gap: 4px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent); }
+#faq .fq-card dt { color: var(--color-6); }
+#faq .fq-card dd { margin: 0; font-size: 15px; }
+#faq .fq-card .fq-note { margin-top: auto; padding-top: 6px; color: var(--color-6); font-style: italic; }
+#faq .fq-sub { padding-top: 8px; }
+@media (max-width: 1024px) { #faq .fq-pillars { grid-template-columns: 1fr 1fr; } #faq .fq-cards { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { #faq .fq-cases__head { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { #faq .fq-pillars { grid-template-columns: 1fr; } }
+#faq .fq-body { display: grid; grid-template-columns: clamp(36px, 5vw, 72px) 1fr; gap: clamp(16px, 3vw, 40px); }
+#faq .fq-rail { position: relative; justify-self: center; width: 1px; background: var(--color-5); }
+#faq .fq-ball { position: absolute; left: 50%; top: 0; width: clamp(30px, 3.4vw, 44px); margin-left: calc(clamp(30px, 3.4vw, 44px) / -2); }
+#faq .fq-ball::after { content: ""; position: absolute; inset: 10%; border-radius: 50%; border: 1.5px solid var(--color-1); border-left-color: transparent; border-right-color: transparent; }
+#faq .fq-list { border-top: 1px solid var(--color-5); }
+#faq .fq-item { border-bottom: 1px solid var(--color-5); }
+#faq .fq-item summary { list-style: none; display: flex; justify-content: space-between; gap: 24px; padding: 20px 0; cursor: pointer; }
+#faq .fq-item summary::-webkit-details-marker { display: none; }
+#faq .fq-item summary::after { content: ""; flex: none; width: 13px; height: 13px; margin-top: .4em; background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat; transition: transform .3s; }
+#faq .fq-item[open] summary::after { transform: rotate(45deg); }
+#faq .fq-item .m-text { max-width: 640px; padding-bottom: 22px; color: var(--color-6); }
+@media (max-width: 860px) { #faq .fq-head { grid-template-columns: 1fr; } #faq .fq-body { grid-template-columns: 28px 1fr; gap: 14px; } #faq .fq-ball { width: 26px; margin-left: -13px; } }
+}
+</style>
+<style data-module="section:contact">
+@layer sections {
+#contact .ct-slide { padding: var(--space-1); }
+#contact .ct-run { position: relative; display: flex; justify-content: flex-end; padding: 18px 0 18px; }
+#contact .ct-title { font-size: clamp(34px, 5.6vw, 88px); max-width: 16ch; }
+#contact .ct-line { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-2); transform-origin: 0 50%; }
+#contact .ct-grid { display: grid; grid-template-columns: 1fr minmax(0, 560px); gap: 40px 64px; padding-top: clamp(32px, 4vw, 56px); }
+#contact .ct-side { display: grid; gap: 32px; align-content: start; }
+#contact .ct-hint { color: var(--color-6); font-size: 14px; }
+#contact .ct-info { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 32px; align-content: start; }
+#contact .ct-info dt { color: var(--color-6); margin-bottom: 6px; }
+#contact .ct-info dd { margin: 0; }
+#contact .ct-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+#contact .ct-form .ct-wide, #contact .ct-form .ct-send { grid-column: 1 / -1; }
+#contact .ct-send { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+#contact .ct-status { color: var(--color-6); }
+@media (max-width: 860px) {
+  #contact .ct-title { font-size: 10vw; }
+  #contact .ct-grid, #contact .ct-info, #contact .ct-form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-module="section:footer">
+@layer sections {
+#footer { padding: var(--space-3) var(--space-2) var(--space-2); }
+#footer .ft-slide { padding: var(--space-1); container-type: inline-size; overflow: hidden; }
+#footer .ft-word { pointer-events: none; width: min(100%, 760px); margin: 18px 0 clamp(28px, 4vw, 56px); }
+#footer .ft-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 28px 32px; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--color-1) 25%, transparent); }
+#footer .ft-cols .m-text, #footer .ft-cols .m-text-4 { color: var(--color-5); }
+#footer .ft-cols ul { display: grid; gap: 8px; align-content: start; }
+#footer .ft-legal { align-self: end; }
+@media (max-width: 860px) { #footer .ft-cols { grid-template-columns: 1fr 1fr; } #footer .ft-cols > .m-text { grid-column: 1 / -1; } }
+}
+</style>
+</head>
+<body>
+<header id="navigation" data-section="navigation">
+  <div class="nav__bar">
+    <a class="nav__logo brand-lockup" href="#hero" aria-label="Edish Connect, back to the top"><img src="assets/logos/EI-lockup-light.png" alt="" width="1824" height="624"></a>
+    <nav aria-label="Main">
+      <ul class="nav__links" data-items=":scope > li">
+        <li><a class="m-link" href="#capabilities">What we build</a></li>
+        <li><a class="m-link" href="#industries">Industries</a></li>
+        <li><a class="m-link" href="#models">How we build</a></li>
+        <li><a class="m-link" href="#council">Expert Council</a></li>
+      </ul>
+    </nav>
+    <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Build with Edish</span></a>
+    <button class="m-iconbtn nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="sr-only">Open the menu</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 9h16M4 15h16"/></svg></button>
+  </div>
+  <div class="menu" id="menu" hidden>
+    <img class="menu__mark" src="assets/logos/edish-connect-EI-mark-white.svg" alt="" width="160" height="182">
+    <button class="m-iconbtn menu__close" type="button"><span class="sr-only">Close the menu</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <nav aria-label="Menu">
+      <ul class="menu__links" data-items=":scope > li">
+        <li><a class="m-text-3" href="#capabilities">What we build</a></li>
+        <li><a class="m-text-3" href="#industries">Industries</a></li>
+        <li><a class="m-text-3" href="#models">How we build</a></li>
+        <li><a class="m-text-3" href="#council">Expert Council</a></li>
+      </ul>
+    </nav>
+    <a class="m-btn-2 menu__cta" href="#contact"><span class="m-btn__label">Build with Edish</span></a>
+  </div>
+</header>
+<main>
+<section id="hero" data-section="hero" aria-labelledby="hero-title">
+  <div class="op-s1">
+    <div class="op-ground" aria-hidden="true"></div>
+    <div class="op-frame">
+      <div class="op-slide m-slide-2">
+        <div class="op-photo">
+          <img class="is-on" data-banner="0" src="https://images.unsplash.com/photo-1630555464837-e1279432b898?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="The Samrat Yantra sundial at Jantar Mantar, Jaipur" width="1600" height="1067" fetchpriority="high">
+          <img data-banner="0" data-src="https://images.unsplash.com/photo-1650530777057-3a7dbc24bf6c?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="The pink sandstone facade of Hawa Mahal, Jaipur" width="1600" height="1067">
+          <img data-banner="0" data-src="https://images.unsplash.com/photo-1666634157070-6fd830fb5672?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A metal part being machined on a precision lathe" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="Robots assembling a car body on a factory line" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="An electric vehicle plugged in to charge" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="An industrial robot arm on an automated production line" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1509391111737-9b07f052f6b6?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="An electrical substation lit up at night" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1579165466949-3180a3d056d5?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A scientist using a pipette in a pharmaceutical laboratory" width="1600" height="1067">
+          <img data-banner="1" data-src="https://images.unsplash.com/photo-1485920694980-9c5db37b0d44?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="People crossing a street in a financial district" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A software engineer writing code" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="Server racks in a data centre" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A finance professional working through accounts with a calculator" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1774898988393-5c752e4d55e9?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A statue of justice, a gavel and an open law book" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="Colleagues in a team meeting at an office" width="1600" height="1067">
+          <img data-banner="2" data-src="https://images.unsplash.com/photo-1603201667230-bd139210db18?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="A team working together around a laptop" width="1600" height="1067">
+        </div>
+        <div class="op-ring" aria-hidden="true"><span class="op-ring__orb m-orb"></span></div>
+        <h1 class="op-title m-text-2" id="hero-title">
+          <span class="op-line op-line--1" style="--len:15"><span class="op-line__in">We build global</span></span>
+          <span class="op-line op-line--2" style="--len:12"><span class="op-line__in">capabilities</span></span>
+          <span class="op-line op-line--3" style="--len:9"><span class="op-line__in">in India.</span></span>
+        </h1>
+        <ol class="op-cap" aria-label="Three stories behind Edish">
+          <li class="is-on"><span class="m-text-4">Engineering heritage</span><span class="m-text">Where German engineering excellence meets India’s timeless legacy.</span></li>
+          <li><span class="m-text-4">Industries and enterprise</span><span class="m-text">Capabilities built for the industries that shape our world.</span></li>
+          <li><span class="m-text-4">People, expertise and technology</span><span class="m-text">From a single engineering team to capabilities across the whole enterprise.</span></li>
+        </ol>
+        <div class="op-meta">
+          <p class="op-tag m-text-4">Where Engineering Meets Execution and Inspiration.</p>
+          <p class="m-text-5">Set up, scale and keep evolving specialised teams and business capabilities in India, with Edish alongside you.</p>
+          <p class="op-more m-text">From engineering to finance, taxation and legal operations, we bring together the right expertise, people, operating models and shared principles, so that a business need becomes a capability that lasts.</p>
+          <div class="op-actions">
+            <a class="m-btn-2" href="#contact"><span class="m-btn__label">Build your capability in India</span></a>
+            <a class="m-link" href="#approach">Explore how we work</a>
+          </div>
+        </div>
+        <div class="op-dim" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="op-s2" id="philosophy">
+    <div class="op-card m-slide-3">
+      <h2 class="op-title2 m-text-2" style="--len:21">Three forces.<br> One Edish philosophy.</h2>
+      <span class="op-orb m-orb" aria-hidden="true"></span>
+      <img class="op-chip m-chip" src="https://images.unsplash.com/photo-1578999935853-4ec5fa6c1f60?auto=format&amp;fit=crop&amp;w=240&amp;h=240&amp;q=80" alt="Hawa Mahal, Jaipur" width="240" height="240" loading="lazy">
+      <div class="op-cols" data-items=":scope > *" data-motion="rise" data-enter="90%">
+        <p class="m-text"><strong>Engineering</strong><br>The expertise to create. Technical depth, specialist skills and a habit of solving hard problems, applied to building products, platforms and technology capability.</p>
+        <p class="m-text"><strong>Execution</strong><br>The ability to make it happen. The people, processes, structures and operating models that carry a business goal through to a team that works and a capability that holds.</p>
+        <p class="m-text"><strong>Inspiration</strong><br>The purpose behind the work. Culture, curiosity, creativity and shared principles: the things that make people take ownership and build something that matters.</p>
+        <p class="op-quote m-text-5">Engineering creates the capability. Execution brings it to life. Inspiration gives it purpose.</p>
+        <p class="op-close m-text">The E and the I in our logo are Engineering and Inspiration, the two ideas Edish was founded on. Execution is how we make them real. We bring all three to every build.</p>
+        <a class="m-link" href="#culture">Why culture matters to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="industries" class="l-sec" data-section="industries" aria-labelledby="industries-title">
+  <div class="mb-slide m-slide-3">
+    <div class="mb-head">
+      <h2 class="m-text-3" id="industries-title" data-motion="streak">Different industries, different challenges, one capability partner.</h2>
+      <p class="m-text-5">Every industry has its own complexity, its own technology priorities and its own way of working. That is where we build the specialised teams and capabilities that meet those demands, and leave a business ready for what comes next.</p>
+    </div>
+    <div class="mb-plans" data-items=":scope > .mb-plan" data-motion="rise" data-enter="86%">
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">01</strong></p>
+        <h3 class="m-text-6">Technology &amp; software</h3>
+        <p class="mb-for m-text">The platforms, digital products and capabilities that modern businesses run on.</p>
+        <ul class="mb-inc"><li class="m-text">Enterprise software</li><li class="m-text">SaaS product engineering</li><li class="m-text">Data engineering and analytics</li><li class="m-text">Cloud-native applications</li><li class="m-text">Platform engineering</li><li class="m-text">Product modernisation</li></ul>
+        <a class="m-link" href="#contact">Talk to us about technology &amp; software</a>
+      </article>
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">02</strong></p>
+        <h3 class="m-text-6">Manufacturing &amp; industrial</h3>
+        <p class="mb-for m-text">Connected systems and automation make industrial operations smarter.</p>
+        <ul class="mb-inc"><li class="m-text">Industrial automation</li><li class="m-text">Smart manufacturing platforms</li><li class="m-text">Industrial IoT</li><li class="m-text">Digital manufacturing systems</li><li class="m-text">Connected operations</li><li class="m-text">Predictive maintenance</li><li class="m-text">Enterprise modernisation</li></ul>
+        <a class="m-link" href="#contact">Talk to us about manufacturing</a>
+      </article>
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">03</strong></p>
+        <h3 class="m-text-6">Energy, utilities &amp; infrastructure</h3>
+        <p class="mb-for m-text">The digital and engineering capability behind an energy ecosystem that is better connected and more efficient.</p>
+        <ul class="mb-inc"><li class="m-text">Energy management</li><li class="m-text">Grid and utility technology</li><li class="m-text">Renewable energy systems</li><li class="m-text">Battery and energy storage technology</li><li class="m-text">Infrastructure monitoring</li><li class="m-text">Data and analytics</li><li class="m-text">Digital infrastructure modernisation</li></ul>
+        <a class="m-link" href="#contact">Talk to us about energy &amp; utilities</a>
+      </article>
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">04</strong></p>
+        <h3 class="m-text-6">Life sciences, pharma &amp; MedTech</h3>
+        <p class="mb-for m-text">Dependable digital platforms and engineering innovation, put to work for healthcare and life sciences.</p>
+        <ul class="mb-inc"><li class="m-text">Healthcare technology platforms</li><li class="m-text">Digital health applications</li><li class="m-text">Pharmaceutical technology systems</li><li class="m-text">Laboratory and research workflows</li><li class="m-text">Data management</li><li class="m-text">Quality and compliance-oriented software engineering</li></ul>
+        <a class="m-link" href="#contact">Talk to us about life sciences</a>
+      </article>
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">05</strong></p>
+        <h3 class="m-text-6">Automotive, mobility &amp; EV</h3>
+        <p class="mb-for m-text">The next generation of mobility, engineered through connected technology and electric vehicles.</p>
+        <ul class="mb-inc"><li class="m-text">Automotive software engineering</li><li class="m-text">Electric vehicle technology</li><li class="m-text">Connected vehicle platforms</li><li class="m-text">Mobility applications</li><li class="m-text">Fleet and transportation technology</li><li class="m-text">Embedded and IoT solutions</li><li class="m-text">Battery and charging ecosystem software</li><li class="m-text">Automotive data and analytics</li></ul>
+        <a class="m-link" href="#contact">Talk to us about mobility &amp; EV</a>
+      </article>
+      <article class="mb-plan">
+        <p class="mb-price"><strong class="m-text-3">06</strong></p>
+        <h3 class="m-text-6">Financial services &amp; FinTech</h3>
+        <p class="mb-for m-text">Secure, scalable platforms for a financial services sector that never stands still.</p>
+        <ul class="mb-inc"><li class="m-text">Digital banking platforms</li><li class="m-text">Financial technology products</li><li class="m-text">Payments and transaction systems</li><li class="m-text">Enterprise financial applications</li><li class="m-text">Data engineering and analytics</li><li class="m-text">Secure digital platforms</li></ul>
+        <a class="m-link" href="#contact">Talk to us about financial services</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="l-sec" data-section="capabilities" aria-labelledby="capabilities-title">
+  <div class="ds-slide m-slide">
+    <h2 class="ds-title m-text-3" id="capabilities-title" style="--len:36" data-motion="streak"><span>The</span> <span>capabilities</span> <span class="ds-break" aria-hidden="true"></span><span>behind</span> <span>your</span> <span>growth.</span></h2>
+    <div class="ds-grid" data-items=":scope > .ds-tile">
+      <figure class="ds-tile ds-tile--lift" style="--capabilities-tilt: -8deg"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Code on a laptop screen" width="600" height="400" loading="lazy"><figcaption class="m-badge">Custom software</figcaption></figure>
+      <div class="ds-tile ds-tile--mark" aria-hidden="true" style="--capabilities-tilt: 5deg"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></div>
+      <figure class="ds-tile ds-tile--run" style="--capabilities-tilt: -3deg"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="A product team working at a shared table" width="600" height="400" loading="lazy"><figcaption class="m-badge">Product engineering</figcaption></figure>
+      <div class="ds-copy">
+        <p class="m-text">Every business needs a different mix of capabilities to move ahead. We work out with you which ones, set them up, and scale the teams and expertise your plans rely on.</p>
+        <p class="m-text">Engineering is the foundation, and specialist business functions sit alongside it.</p>
+      </div>
+      <figure class="ds-tile ds-tile--ride" style="--capabilities-tilt: 9deg"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Office towers seen from below" width="600" height="900" loading="lazy"><figcaption class="m-badge">Professional functions</figcaption></figure>
+      <figure class="ds-tile ds-tile--swim" style="--capabilities-tilt: -6deg"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="A laptop with a code editor open" width="600" height="400" loading="lazy"><figcaption class="m-badge">Quality engineering</figcaption></figure>
+      <figure class="ds-tile ds-tile--kit" style="--capabilities-tilt: 3deg"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Server racks in a data centre" width="600" height="400" loading="lazy"><figcaption class="m-badge">Cloud &amp; platform</figcaption></figure>
+      <figure class="ds-tile ds-tile--court" style="--capabilities-tilt: -10deg"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Charts on an analytics dashboard" width="600" height="400" loading="lazy"><figcaption class="m-badge">Data</figcaption></figure>
+      <a class="ds-tile ds-tile--link" href="#models" style="--capabilities-tilt: 6deg"><svg aria-hidden="true" viewBox="0 0 52 52"><circle cx="26" cy="26" r="25"/><path d="M18 26h16M28 20l6 6-6 6"/></svg><span class="m-text-4">See how you can work with us</span></a>
+      <p class="ds-note m-text-6">Any of these can take the form of a few specialists, a dedicated team or a centre of your own.</p>
+    </div>
+    <div class="ds-pillars">
+      <div class="ds-pillar">
+        <h3 class="m-text-6">Engineering &amp; technology</h3>
+        <p class="m-text">Engineering is where Edish started, and it remains the core of what we do.</p>
+        <ol class="ds-list" data-items=":scope > li" data-motion="rise" data-enter="92%">
+          <li><span class="m-text-4">01</span><h4 class="m-text">Product engineering</h4><p class="m-text">Designing and building digital products, SaaS platforms and applications that scale.</p></li>
+          <li><span class="m-text-4">02</span><h4 class="m-text">Custom software development</h4><p class="m-text">Enterprise applications and software shaped around what your business actually needs.</p></li>
+          <li><span class="m-text-4">03</span><h4 class="m-text">Platform engineering</h4><p class="m-text">Platforms that scale and stay reliable, with a better experience for the developers who use them.</p></li>
+          <li><span class="m-text-4">04</span><h4 class="m-text">Cloud engineering</h4><p class="m-text">Cloud architecture, migration and modernisation, along with infrastructure optimisation.</p></li>
+          <li><span class="m-text-4">05</span><h4 class="m-text">Data engineering</h4><p class="m-text">Data platforms, pipelines and analytics, and the business systems that run on data.</p></li>
+          <li><span class="m-text-4">06</span><h4 class="m-text">Quality engineering</h4><p class="m-text">Quality, automation, testing and reliability built into every stage of the development lifecycle.</p></li>
+          <li><span class="m-text-4">07</span><h4 class="m-text">Engineering consulting</h4><p class="m-text">Advice on technology strategy, architecture and engineering transformation.</p></li>
+        </ol>
+      </div>
+      <div class="ds-pillar">
+        <h3 class="m-text-6">Enterprise &amp; professional functions</h3>
+        <p class="m-text">Working through the Edish Expert Council and our specialist partners, we help businesses build teams and functions outside technology as well.</p>
+        <ol class="ds-list" data-items=":scope > li" data-motion="rise" data-enter="92%">
+          <li><span class="m-text-4">01</span><h4 class="m-text">Finance &amp; taxation</h4><p class="m-text">Chartered accountants, financial reporting, tax operations, accounting operations, accounts payable and receivable, financial analysis, reconciliations and finance process management.</p></li>
+          <li><span class="m-text-4">02</span><h4 class="m-text">Legal &amp; contract operations</h4><p class="m-text">Legal operations, contract lifecycle management, contract documentation, legal research, compliance support and corporate legal administration.</p></li>
+          <li><span class="m-text-4">03</span><h4 class="m-text">Risk, audit &amp; compliance</h4><p class="m-text">Internal audit, risk operations, governance, controls and monitoring, regulatory reporting and compliance support.</p></li>
+          <li><span class="m-text-4">04</span><h4 class="m-text">HR &amp; people operations</h4><p class="m-text">Talent acquisition, HR operations, workforce administration, payroll support and people analytics.</p></li>
+          <li><span class="m-text-4">05</span><h4 class="m-text">Business &amp; operational functions</h4><p class="m-text">Procurement operations, business process management, enterprise reporting, selected shared services and administrative operations.</p></li>
+        </ol>
+        <p class="ds-caveat m-text">These functions are delivered with qualified experts, vetted professional firms and strategic delivery partners. Where the work is regulated, such as tax or legal advice, the specialist firm stays responsible for it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="models" class="l-sec" data-section="models" aria-labelledby="models-title">
+  <div class="mb-slide m-slide">
+    <svg class="mb-ring" data-motion="orbit" viewBox="0 0 400 400" aria-hidden="true" data-items=":scope > circle"><circle cx="200" cy="200" r="199" pathLength="1"/><circle cx="200" cy="200" r="150" pathLength="1"/></svg>
+    <div class="mb-head">
+      <h2 class="m-text-3" id="models-title" data-motion="streak">One partner, several ways to build.</h2>
+      <p class="m-text-5">No two organisations start from the same place. Some need a few specialist professionals. Others need a dedicated team, a whole department, an offshore centre, or a capability centre that spans several functions. The model that suits you depends on your requirements, your scale, how much you want to own and where you plan to be in the long run. We help you work it out.</p>
+    </div>
+    <div class="mb-plans" data-items=":scope > .mb-plan" data-motion="rise" data-enter="86%">
+      <article class="mb-plan">
+        <h3 class="m-text-6">Staff augmentation</h3>
+        <p class="mb-price"><strong class="m-text-3">Extend</strong><span class="m-text-4">Specialists</span></p>
+        <p class="mb-for m-text">Add specialist professionals and engineering expertise to the team you already have.</p>
+        <ul class="mb-inc"><li class="m-text">People join your team, work in your tools and report to your leads</li><li class="m-text">Engineering and specialist professional roles</li><li class="m-text">Suits a single project or a gap in skills</li></ul>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about specialists</span></a>
+      </article>
+      <article class="mb-plan">
+        <h3 class="m-text-6">Dedicated teams</h3>
+        <p class="mb-price"><strong class="m-text-3">Yours alone</strong><span class="m-text-4">Dedicated</span></p>
+        <p class="mb-for m-text">A focused team that works only on your requirements, functions or products.</p>
+        <ul class="mb-inc"><li class="m-text">Dedicated engineering team</li><li class="m-text">Dedicated finance team</li><li class="m-text">Dedicated taxation team</li><li class="m-text">Dedicated legal operations team</li></ul>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about a dedicated team</span></a>
+      </article>
+      <article class="mb-plan">
+        <h3 class="m-text-6">Offshore development centre</h3>
+        <p class="mb-price"><strong class="m-text-3">We run it</strong><span class="m-text-4">ODC</span></p>
+        <p class="mb-for m-text">A dedicated offshore operation, with the people, processes, governance and infrastructure to deliver over the long term.</p>
+        <ul class="mb-inc"><li class="m-text">Engineering or functional teams working on your business full time</li><li class="m-text">We hire the people and manage them day to day</li><li class="m-text">The team works from our premises</li><li class="m-text">Everything can be set up over video calls</li></ul>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about an ODC</span></a>
+      </article>
+      <article class="mb-plan mb-plan--featured">
+        <h3 class="m-text-6">Global capability centre</h3>
+        <p class="mb-price"><strong class="m-text-3">You own it</strong><span class="m-text-4">GCC</span></p>
+        <p class="mb-for m-text">A strategic capability centre in India, built into your global organisation and aligned with its long-term goals.</p>
+        <ul class="mb-inc"><li class="m-text">Can include several functions, depending on your needs and the capabilities available</li><li class="m-text">It is your company and you manage it</li><li class="m-text">We find the office space and hire the key roles</li><li class="m-text">We stay involved until it can run on its own</li></ul>
+        <a class="m-btn-2" href="#contact"><span class="m-btn__label">Ask about a GCC</span></a>
+      </article>
+      <article class="mb-plan">
+        <h3 class="m-text-6">Build, operate, transfer</h3>
+        <p class="mb-price"><strong class="m-text-3">Handed over</strong><span class="m-text-4">BOT</span></p>
+        <p class="mb-for m-text">We build and run a dedicated team or centre, then hand its operations and ownership over to you.</p>
+        <ul class="mb-inc"><li class="m-text">We set it up and run it for an agreed period</li><li class="m-text">Size and cost are agreed at the start</li><li class="m-text">When it is stable, the team and the setup move to you</li><li class="m-text">You take over something that already works</li></ul>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about BOT</span></a>
+      </article>
+      <article class="mb-plan">
+        <h3 class="m-text-6">Managed teams &amp; functional operations</h3>
+        <p class="mb-price"><strong class="m-text-3">Run for you</strong><span class="m-text-4">Managed</span></p>
+        <p class="mb-for m-text">Hand an agreed function, process or delivery scope to a managed team, with clear responsibilities and outcomes.</p>
+        <ul class="mb-inc"><li class="m-text">Managed engineering operations</li><li class="m-text">Selected finance processes</li><li class="m-text">Defined legal operations</li><li class="m-text">Managed quality engineering</li></ul>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about managed teams</span></a>
+      </article>
+    </div>
+    <div class="mb-note">
+      <p class="m-text-6">From individual specialists to whole business functions. From a dedicated team to a global capability centre. One partner to help you design and build the right operating model.</p>
+      <p class="m-text">Every model works for engineering and for selected professional functions. None of them leads automatically to the next. You begin wherever it makes sense for your business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="council" class="l-sec" data-section="council" aria-labelledby="council-title">
+  <div class="lb-slide m-slide-2">
+    <div class="lb-text">
+      <h2 class="m-text-3" id="council-title">Edish Expert Council</h2>
+      <p class="m-text-5">Expertise beyond boundaries.</p>
+      <p class="m-text">Building a capability in India takes more than finding good people. It takes the right expertise, real operating knowledge and a clear understanding of how a whole function works.</p>
+      <p class="m-text">The Expert Council brings together experienced professionals, industry specialists and strategic partners across technology, finance, taxation, legal, risk, compliance and business operations. If you are building a dedicated team of chartered accountants, an offshore engineering centre or a specialised business function, we bring the expertise and the ecosystem to get it done.</p>
+      <a class="m-link" href="#council-more">Explore the Edish Expert Council</a>
+    </div>
+    <div class="lb-stage">
+      <div class="lb-lens"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt="A small team talking around a table" width="880" height="587" loading="lazy"></div>
+      <svg class="lb-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49.5" pathLength="1"/></svg>
+      <ol class="lb-notes" data-items=":scope > li">
+        <li class="lb-note" style="--a:-90deg"><strong class="m-text-6">Understand</strong><span class="m-text-4">The function, its processes, skills and operating needs</span></li>
+        <li class="lb-note" style="--a:-42deg"><strong class="m-text-6">Advise</strong><span class="m-text-4">The right structure, location and engagement model</span></li>
+        <li class="lb-note" style="--a:46deg"><strong class="m-text-6">Build</strong><span class="m-text-4">Talent, specialist partners, infrastructure and setup</span></li>
+        <li class="lb-note" style="--a:134deg"><strong class="m-text-6">Enable</strong><span class="m-text-4">The team, processes, governance and workplace</span></li>
+        <li class="lb-note" style="--a:222deg"><strong class="m-text-6">Evolve</strong><span class="m-text-4">Expansion, maturity and long-term capability</span></li>
+      </ol>
+    </div>
+    <div class="lb-more" id="council-more">
+      <div>
+        <h3 class="m-text-6">Specialist domains</h3>
+        <ul class="lb-list lb-list--2" data-items=":scope > li" data-motion="rise" data-enter="92%">
+          <li class="m-text">Engineering &amp; technology</li>
+          <li class="m-text">Finance &amp; taxation</li>
+          <li class="m-text">Legal &amp; contract operations</li>
+          <li class="m-text">Risk, audit &amp; compliance</li>
+          <li class="m-text">HR &amp; people operations</li>
+          <li class="m-text">Business &amp; operational functions</li>
+        </ul>
+        <p class="m-text">The council is a curated network: finance leaders and chartered accountants, legal and corporate law specialists, risk and compliance professionals, technology leaders, HR specialists and business operations experts. Edish remains your main point of contact and leads the build. The specialists and firms stay responsible for their own regulated professional work.</p>
+      </div>
+      <div>
+        <h3 class="m-text-6">An illustrative scenario</h3>
+        <p class="m-text">Picture a multinational that manages tax across several countries and wants a dedicated team of 20 chartered accountants and finance professionals in India. Edish can help it:</p>
+        <ol class="lb-list" data-items=":scope > li" data-motion="rise" data-enter="92%">
+          <li class="m-text">Map out the processes and the workload</li>
+          <li class="m-text">Choose a city and operating structure that fit</li>
+          <li class="m-text">Connect with experienced finance and taxation experts</li>
+          <li class="m-text">Coordinate recruitment and operational setup</li>
+          <li class="m-text">Establish the dedicated team</li>
+          <li class="m-text">Align the operation with its systems, reporting and governance</li>
+          <li class="m-text">Support expansion when the time comes</li>
+        </ol>
+        <p class="m-text">The same approach works for engineering, legal operations, compliance and other business functions.</p>
+      </div>
+      <p class="lb-close m-text-5">The right expertise can build more than a team. It can build an entire capability.</p>
+    </div>
+  </div>
+</section>
+
+<section id="culture" class="l-sec" data-section="culture" aria-labelledby="culture-title">
+  <div class="mt-slide m-slide">
+    <div class="mt-side">
+      <span class="mt-orb m-orb" aria-hidden="true"></span>
+      <ol class="mt-steps" data-items=":scope > li" data-motion="rise" data-enter="86%">
+        <li><span class="mt-num m-text-4">01</span><h3 class="m-text-6">Precision</h3><p class="m-text">The discipline to get things right. Accuracy, close attention to detail, clear quality standards and careful execution.</p></li>
+        <li><span class="mt-num m-text-4">02</span><h3 class="m-text-6">Foresight</h3><p class="m-text">The ability to think beyond today. Planning, architectural thinking, anticipating risk and building so that things scale over the long term.</p></li>
+        <li><span class="mt-num m-text-4">03</span><h3 class="m-text-6">Mastery</h3><p class="m-text">The pursuit of excellence through expertise. Technical depth, specialist knowledge, continuous learning and pride in the quality of the work.</p></li>
+        <li><span class="mt-num m-text-4">04</span><h3 class="m-text-6">Ownership</h3><p class="m-text">The responsibility to see things through. Accountability, initiative and a commitment to outcomes.</p></li>
+        <li><span class="mt-num m-text-4">05</span><h3 class="m-text-6">Reliability</h3><p class="m-text">The consistency to earn trust. Delivery you can predict, operations that stay stable and collaboration you can depend on.</p></li>
+        <li><span class="mt-num m-text-4">06</span><h3 class="m-text-6">Curiosity</h3><p class="m-text">The inspiration to keep moving forward. Creativity, experimentation, adaptability and continuous improvement.</p></li>
+      </ol>
+    </div>
+    <div class="mt-main">
+      <h2 class="mt-title m-text-3" id="culture-title">
+        <span class="mt-row">Culture <span class="mt-gap"><img class="mt-chip m-chip" src="https://images.unsplash.com/photo-1660736701150-975a90ce2d9e?auto=format&amp;fit=crop&amp;w=240&amp;h=240&amp;q=80" alt="" width="240" height="240" loading="lazy"></span> <span class="mt-after">is</span></span>
+        <span class="mt-row">part <span class="mt-gap"><img class="mt-chip m-chip" src="https://images.unsplash.com/photo-1622225399403-548e2df0c908?auto=format&amp;fit=crop&amp;w=240&amp;h=240&amp;q=80" alt="" width="240" height="240" loading="lazy"></span> <span class="mt-after">of the</span></span>
+        <span class="mt-row">work. <span class="mt-gap"><img class="mt-chip m-chip" src="https://images.unsplash.com/photo-1755408007655-9ac329cfa145?auto=format&amp;fit=crop&amp;w=240&amp;h=240&amp;q=80" alt="" width="240" height="240" loading="lazy"></span></span>
+      </h2>
+      <div class="mt-foot">
+        <div class="mt-copy">
+          <p class="m-text-5">Technical skills build a team. Shared principles decide how that team thinks, works together, makes decisions and delivers. A capability centre is more than a group of skilled people. It is a connected community that shares a sense of ownership, quality and purpose.</p>
+          <p class="m-text">We combine the working principles your organisation cares about with the strengths of the local talent, so the team becomes part of your business instead of working alongside it. You will see these principles in how we hire and select people, onboard them, develop leaders, govern quality and delivery, share knowledge, hold ourselves accountable, manage performance and keep improving.</p>
+          <p class="m-text-6">One shared mindset. Many cultural expressions. A team that feels like yours.</p>
+        </div>
+        <a class="m-btn" href="#contact"><span class="m-btn__label">Talk to us</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="heritage" class="l-sec" data-section="heritage" aria-labelledby="heritage-title">
+  <div class="st-slide m-slide-3">
+    <h2 class="st-label m-text-6" id="heritage-title">One philosophy. Many cultural expressions.</h2>
+    <figure class="st-main">
+      <div data-motion="streak" data-from="left"><p class="m-text-7"><img class="st-chip m-chip" data-motion="focus" data-enter="85%" src="https://images.unsplash.com/photo-1630555464837-e1279432b898?auto=format&amp;fit=crop&amp;w=240&amp;h=240&amp;q=80" alt="The stone sundial at Jantar Mantar, Jaipur" width="240" height="240" loading="lazy">Great engineering and sound business execution don’t belong to any one geography. Different places build different strengths over generations, yet the same principles can still bring people together across borders.</p></div>
+    </figure>
+    <p class="st-intro m-text">Precision, foresight, mastery, ownership, reliability and curiosity appear everywhere, in different forms. At Edish, we believe the best global teams bring an organisation’s own working principles together with the strengths of the local talent ecosystem.</p>
+    <div class="st-group">
+      <h3 class="m-text-6">A story we like to tell: Germany and Jaipur</h3>
+      <ul class="st-notes" data-items=":scope > li" data-motion="rise" data-enter="86%">
+        <li><p class="m-text-4">Precision</p><p class="m-text"><strong>Germany:</strong> engineering standards and precision manufacturing.</p><p class="m-text"><strong>Jaipur:</strong> the astronomical instruments of Jantar Mantar.</p></li>
+        <li><p class="m-text-4">Foresight</p><p class="m-text"><strong>Germany:</strong> systems engineering and long-term industrial planning.</p><p class="m-text"><strong>Jaipur:</strong> a city laid out to a plan from the start.</p></li>
+        <li><p class="m-text-4">Mastery</p><p class="m-text"><strong>Germany:</strong> specialist engineering craftsmanship.</p><p class="m-text"><strong>Jaipur:</strong> traditional blue pottery and block printing.</p></li>
+        <li><p class="m-text-4">Ownership</p><p class="m-text"><strong>Germany:</strong> accountability and disciplined execution.</p><p class="m-text"><strong>Jaipur:</strong> craft traditions built on individual skill.</p></li>
+        <li><p class="m-text-4">Reliability</p><p class="m-text"><strong>Germany:</strong> industrial quality and dependable systems.</p><p class="m-text"><strong>Jaipur:</strong> architecture designed to endure.</p></li>
+        <li><p class="m-text-4">Curiosity</p><p class="m-text"><strong>Germany:</strong> research, experimentation and innovation.</p><p class="m-text"><strong>Jaipur:</strong> mathematical, astronomical and artistic traditions.</p></li>
+      </ul>
+    </div>
+    <div class="st-group">
+      <h3 class="m-text-6">Across India</h3>
+      <p class="st-fine m-text">Jaipur is one example among many. The same thinking applies wherever a client chooses to build in India.</p>
+      <ul class="st-notes" data-items=":scope > li" data-motion="rise" data-enter="86%">
+        <li><p class="m-text-4">Bengaluru</p><p class="m-text">Technology innovation, product thinking and entrepreneurial energy.</p></li>
+        <li><p class="m-text-4">Chennai</p><p class="m-text">Automotive, manufacturing and engineering expertise.</p></li>
+        <li><p class="m-text-4">Hyderabad</p><p class="m-text">Technology depth, enterprise scale and innovation.</p></li>
+        <li><p class="m-text-4">Indore</p><p class="m-text">Emerging talent, operational focus and a growing technology ecosystem.</p></li>
+        <li><p class="m-text-4">Jaipur</p><p class="m-text">Precision, craftsmanship, planning and design.</p></li>
+        <li><p class="m-text-4">Pune</p><p class="m-text">Engineering discipline, industrial expertise and product development.</p></li>
+      </ul>
+      <p class="st-fine m-text">These stories are illustrations, not claims about everyone from a given place. Where we would actually suggest you build depends on talent, skills, costs, infrastructure, leadership availability and what your business needs.</p>
+    </div>
+    <p class="st-close m-text-6">Different places. Different histories. Shared principles.</p>
+  </div>
+</section>
+
+<section id="approach" class="l-sec" data-section="approach" aria-labelledby="approach-title">
+  <div class="wk-stage">
+    <div class="wk-head">
+      <h2 class="m-text-3" id="approach-title" data-motion="streak">From the first professional to an entire capability centre.</h2>
+      <div class="wk-intro">
+        <p class="m-text-5">Building a capability in India is not a one-off hiring exercise. It calls for a structured approach that draws your objectives, people, expertise, processes, technology and governance into one plan.</p>
+        <p class="m-text-6">Built around your ambitions. Designed to evolve with your business.</p>
+      </div>
+    </div>
+    <div class="wk-view">
+      <ol class="wk-track" data-items=":scope > li">
+        <li class="wk-day m-slide"><h3 class="m-text-6">Stage 1</h3><p class="m-text-5">Understand</p><p class="m-text wk-time">Objectives and requirements</p><p class="m-text">We learn your business objectives, functions, technology needs, processes and skills, and how you expect the operation to run.</p><div class="wk-stair" data-lv="1" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></li>
+        <li class="wk-day m-slide"><h3 class="m-text-6">Stage 2</h3><p class="m-text-5">Design</p><p class="m-text wk-time">Model, location and structure</p><p class="m-text">We recommend the engagement model, location, organisation structure, specialist partners and governance that fit.</p><div class="wk-stair" data-lv="2" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></li>
+        <li class="wk-day m-slide"><h3 class="m-text-6">Stage 3</h3><p class="m-text-5">Build</p><p class="m-text wk-time">People, processes and systems</p><p class="m-text">We recruit and onboard the right people and put the processes, infrastructure and operational systems around them.</p><div class="wk-stair" data-lv="3" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></li>
+        <li class="wk-day m-slide"><h3 class="m-text-6">Stage 4</h3><p class="m-text-5">Operate</p><p class="m-text wk-time">Performance and continuity</p><p class="m-text">We manage performance, continuity, quality, communication, delivery and day-to-day efficiency.</p><div class="wk-stair" data-lv="4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></li>
+        <li class="wk-day m-slide"><h3 class="m-text-6">Stage 5</h3><p class="m-text-5">Evolve</p><p class="m-text wk-time">Growth and maturity</p><p class="m-text">We support you as you widen your capabilities, take on more ownership, add new functions and keep maturing as an organisation.</p><div class="wk-stair" data-lv="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></li>
+      </ol>
+    </div>
+    <div class="wk-progress" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<section id="faq" class="l-sec" data-section="faq" aria-labelledby="faq-title">
+  <div class="fq-slide m-slide-3">
+    <div class="fq-head">
+      <h2 class="m-text-3" id="faq-title">Capability built on experience.</h2>
+      <p class="m-text">You should be able to check what you are trusting. Before you commit to anything, we take you through the people, partners and governance behind the work.</p>
+    </div>
+    <div class="fq-proof">
+      <ol class="fq-pillars" data-items=":scope > li" data-motion="rise" data-enter="88%">
+        <li><span class="m-text-4">01</span><h3 class="m-text-6">You meet the people</h3><p class="m-text">Before anything is signed, you meet the founding team and the person accountable for building your capability.</p></li>
+        <li><span class="m-text-4">02</span><h3 class="m-text-6">Experts with real credentials</h3><p class="m-text">Every specialist who comes in through the Expert Council is vetted, and their qualifications and affiliations are checked before they start work with you.</p></li>
+        <li><span class="m-text-4">03</span><h3 class="m-text-6">Governance from day one</h3><p class="m-text">Responsibilities, quality checks, reporting and escalation are agreed in writing before the team starts, and reviewed with you as it grows.</p></li>
+        <li><span class="m-text-4">04</span><h3 class="m-text-6">References on request</h3><p class="m-text">Where a client has approved it, we share case studies and introduce you to people we have worked with, so you can ask them directly.</p></li>
+      </ol>
+      <div class="fq-cases">
+        <div class="fq-cases__head">
+          <h3 class="m-text-6">What an engagement can look like</h3>
+          <p class="m-text">Three illustrative examples of how we would handle common requests. They show our method; they are not results from specific clients.</p>
+        </div>
+        <div class="fq-cards" data-items=":scope > *" data-motion="rise" data-enter="88%">
+          <article class="fq-card">
+            <p class="fq-tag m-text-4">Finance &amp; taxation · Dedicated team</p>
+            <h4 class="m-text-6">A dedicated tax team in India</h4>
+            <dl>
+              <div><dt class="m-text-4">The need</dt><dd class="m-text">A multinational managing tax across several countries wants 20 chartered accountants and finance professionals in India.</dd></div>
+              <div><dt class="m-text-4">What we would set up</dt><dd class="m-text">We would pick the city and structure with finance experts from the council, then line up recruitment, onboarding and reporting with the client’s existing systems.</dd></div>
+              <div><dt class="m-text-4">How you would measure it</dt><dd class="m-text">Filing deadlines met, how quickly reconciliations are turned around, and review findings closed on time.</dd></div>
+            </dl>
+            <p class="fq-note m-text-4">Illustrative example</p>
+          </article>
+          <article class="fq-card">
+            <p class="fq-tag m-text-4">Automotive, mobility &amp; EV · ODC</p>
+            <h4 class="m-text-6">An embedded software centre for a mobility company</h4>
+            <dl>
+              <div><dt class="m-text-4">The need</dt><dd class="m-text">An automotive supplier needs a stable team for embedded and connected-vehicle software that it does not have to run day to day.</dd></div>
+              <div><dt class="m-text-4">What we would set up</dt><dd class="m-text">Engineers, QA and a delivery lead in a centre Edish runs, working inside the client’s tools, processes and quality gates.</dd></div>
+              <div><dt class="m-text-4">How you would measure it</dt><dd class="m-text">Release cadence, defects caught before release and how stable the team stays over time.</dd></div>
+            </dl>
+            <p class="fq-note m-text-4">Illustrative example</p>
+          </article>
+          <article class="fq-card">
+            <p class="fq-tag m-text-4">Technology &amp; finance · GCC with BOT</p>
+            <h4 class="m-text-6">A multi-function centre built to hand over</h4>
+            <dl>
+              <div><dt class="m-text-4">The need</dt><dd class="m-text">A software company wants engineering, data and finance in one India centre that it will eventually own outright.</dd></div>
+              <div><dt class="m-text-4">What we would set up</dt><dd class="m-text">Edish builds and runs the centre for an agreed period, then moves the people, processes and setup across to the client.</dd></div>
+              <div><dt class="m-text-4">How you would measure it</dt><dd class="m-text">Hiring plan met, governance in place and a clean transfer on the agreed date.</dd></div>
+            </dl>
+            <p class="fq-note m-text-4">Illustrative example</p>
+          </article>
+        </div>
+      </div>
+      <h3 class="fq-sub m-text-6">Questions businesses ask first</h3>
+    </div>
+    <div class="fq-body">
+      <div class="fq-rail" aria-hidden="true"><span class="fq-ball m-orb"></span></div>
+      <div class="fq-list" data-items=":scope > details">
+        <details class="fq-item"><summary class="m-text-6">Who will we actually be working with?</summary><p class="m-text">Before anything is signed, you meet the founding team and the person accountable for building your capability.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Who handles regulated work such as tax, audit or legal?</summary><p class="m-text">Specialist professional firms and qualified experts do. Edish remains your main point of contact and leads the build, while the specialists stay responsible for their own regulated work.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Can we see examples of your work?</summary><p class="m-text">Where a client has approved it, we share case studies and introduce you to people we have worked with. The examples on this page are illustrations of our method, not client results.</p></details>
+        <details class="fq-item"><summary class="m-text-6">How do you keep quality and delivery on track?</summary><p class="m-text">Responsibilities, quality checks, reporting and escalation are agreed in writing before the team starts, and reviewed with you as it grows.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Do we need to know which model we want before we talk?</summary><p class="m-text">No. Only your name and email are required on the form. We will help you work out the model that suits your requirements, your scale and how much you want to own.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Can we move from one model to another later?</summary><p class="m-text">Yes. There is no set path from one model to the next, so you can start wherever makes sense for your business and change the model as your needs change.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Do you only work in Jaipur?</summary><p class="m-text">No. Jaipur is one example. We work across India, and where we suggest you build depends on talent, skills, costs, infrastructure, leadership availability and what your business needs.</p></details>
+        <details class="fq-item"><summary class="m-text-6">Do we have to come to India to set things up?</summary><p class="m-text">Not necessarily. For an ODC, everything can be set up over video calls.</p></details>
+        <details class="fq-item"><summary class="m-text-6">What happens after I send the form?</summary><p class="m-text">Our sales team reads it and contacts you by email or phone to talk through your requirements. We then prepare a detailed proposal, and it can take more than one call to get there.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="l-sec" data-section="contact" aria-labelledby="contact-title">
+  <div class="ct-slide m-slide">
+    <div class="ct-run">
+      <h2 class="ct-title m-text-3" id="contact-title">What capability are you looking to build in India?</h2>
+      <div class="ct-line" aria-hidden="true"></div>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-side">
+        <p class="m-text-5">Planning an engineering team, a finance function, a dedicated offshore centre or a larger global capability centre? Let’s work out the right way forward together.</p>
+        <dl class="ct-info">
+          <div><dt class="m-text-4">Email</dt><dd><a class="m-link" href="mailto:hello@edishconnect.com">hello@edishconnect.com</a></dd></div>
+          <div><dt class="m-text-4">LinkedIn</dt><dd><a class="m-link" href="https://www.linkedin.com/company/edish-connect" target="_blank" rel="noopener">Edish Connect</a></dd></div>
+          <div><dt class="m-text-4">What to send</dt><dd class="m-text">A few lines on what you want to build. Attach a brief, spec or RFP if you have one.</dd></div>
+          <div><dt class="m-text-4">What happens next</dt><dd class="m-text">Our team reads it and contacts you by email or phone.</dd></div>
+        </dl>
+        <p class="ct-hint m-text">Only your name and email are required. If you’re not sure about the rest, leave it blank and we’ll work it out together.</p>
+      </div>
+      <form class="ct-form" action="#" method="post" enctype="multipart/form-data" novalidate data-motion="rise" data-enter="86%" data-items=":scope > *">
+        <label class="m-field"><span class="m-field__label">Name</span><input name="name" type="text" autocomplete="name" required></label>
+        <label class="m-field"><span class="m-field__label">Work email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="m-field"><span class="m-field__label">Phone (optional)</span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label class="m-field"><span class="m-field__label">Company</span><input name="company" type="text" autocomplete="organization"></label>
+        <label class="m-field ct-wide"><span class="m-field__label">What capability are you looking to establish?</span><select name="capability"><option value="">Choose one</option><option>Engineering &amp; Technology</option><option>Finance &amp; Taxation</option><option>Legal Operations</option><option>Risk, Audit &amp; Compliance</option><option>HR &amp; People Operations</option><option>Business &amp; Shared Services</option><option>Multiple functions</option><option>Not sure yet</option></select></label>
+        <label class="m-field ct-wide"><span class="m-field__label">What are you looking to set up?</span><select name="model"><option value="">Choose one</option><option>A few specialist professionals</option><option>Dedicated team</option><option>ODC / Functional centre</option><option>GCC / Multi-function centre</option><option>Managed process or department</option><option>Not sure yet</option></select></label>
+        <label class="m-field"><span class="m-field__label">Approximate team size</span><select name="size"><option value="">Choose one</option><option>1–5</option><option>6–20</option><option>21–50</option><option>51–100</option><option>100+</option><option>Yet to be determined</option></select></label>
+        <label class="m-field"><span class="m-field__label">Preferred location</span><select name="location"><option value="">Choose one</option><option>Bengaluru</option><option>Chennai</option><option>Hyderabad</option><option>Indore</option><option>Jaipur</option><option>Pune</option><option>Multiple locations</option><option>Open to recommendations</option></select></label>
+        <label class="m-field ct-wide"><span class="m-field__label">Additional requirements</span><textarea name="message" rows="3" placeholder="A short description of what your business needs"></textarea></label>
+        <label class="m-field ct-wide"><span class="m-field__label">Attach a brief (PDF or Word, optional)</span><input name="brief" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+        <div class="ct-send">
+          <button class="m-btn" type="submit"><span class="m-btn__label">Start building with Edish</span></button>
+          <p class="ct-status m-text-4" role="status" data-ok="Thanks, we've got it. Someone from our team will get back to you by email or phone." data-error="Please add your name and a valid work email."></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="footer" data-section="footer">
+  <div class="ft-slide m-slide-2">
+    <p class="ft-word brand-lockup" data-motion="streak" data-from="left"><img src="assets/logos/EI-lockup-navy.png" alt="Edish Connect, Engineering Growth Company" width="1824" height="624" loading="lazy"></p>
+    <div class="ft-cols">
+      <p class="m-text">We build global capabilities in India across engineering and specialist business functions, from a handful of experts to a full capability centre. Where Engineering Meets Execution and Inspiration.</p>
+      <nav aria-label="Footer">
+        <ul data-items=":scope > li">
+          <li><a class="m-link" href="#capabilities">What we build</a></li>
+          <li><a class="m-link" href="#industries">Industries</a></li>
+          <li><a class="m-link" href="#models">How we build</a></li>
+          <li><a class="m-link" href="#council">Expert Council</a></li>
+          <li><a class="m-link" href="#culture">Our culture</a></li>
+          <li><a class="m-link" href="#approach">Our approach</a></li>
+        </ul>
+      </nav>
+      <ul data-items=":scope > li">
+        <li><a class="m-link" href="https://www.linkedin.com/company/edish-connect" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a class="m-link" href="mailto:hello@edishconnect.com">hello@edishconnect.com</a></li>
+        <li><a class="m-link" href="#contact">Start building with Edish</a></li>
+      </ul>
+      <p class="ft-legal m-text-4">© 2026 Edish Connect</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-module="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  const bar = root.querySelector('.nav__bar');
+  const toggle = root.querySelector('.nav__menu');
+  const menu = root.querySelector('.menu');
+  const close = root.querySelector('.menu__close');
+  let lastY = scrollY, turnY = scrollY, hidden = false;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    if (y > lastY) { if (hidden) turnY = y; else if (y > 160 && y - turnY > 24) { hidden = true; bar.setAttribute('data-hidden', ''); turnY = y; } }
+    else if (y < lastY) { if (!hidden) turnY = y; else if (turnY - y > 24 || y < 80) { hidden = false; bar.removeAttribute('data-hidden'); turnY = y; } }
+    lastY = y;
+  }, { passive: true });
+  bar.addEventListener('focusin', () => { hidden = false; bar.removeAttribute('data-hidden'); });
+  const open = state => {
+    menu.hidden = !state; toggle.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => open(true));
+  close.addEventListener('click', () => open(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) open(false); });
+})();
+</script>
+<script data-module="section-script:hero">
+(() => {
+  const slide = document.querySelector('#hero .op-slide');
+  const title = slide.querySelector('.op-title');
+  const meta = slide.querySelector('.op-meta');
+  const cap = slide.querySelector('.op-cap');
+  const lines = [...title.querySelectorAll('.op-line')];
+  const box = el => { let x = 0, y = 0; for (let n = el; n && n !== slide; n = n.offsetParent) { x += n.offsetLeft; y += n.offsetTop; } return { l: x, t: y, r: x + el.offsetWidth, b: y + el.offsetHeight }; };
+  const hit = (a, b, gap) => a.l < b.r + gap && a.r + gap > b.l && a.t < b.b + gap && a.b + gap > b.t;
+  const clash = () => { const others = [meta, cap].filter(el => el && el.offsetParent).map(box); return lines.some(line => { const a = box(line); return others.some(o => hit(a, o, 16)); }); };
+  const shrink = floor => { let scale = 1; title.style.setProperty('--op-fit', 1); while (clash() && scale > floor) { scale -= 0.04; title.style.setProperty('--op-fit', scale); } };
+  const fit = () => {
+    meta.classList.remove('is-compact');
+    shrink(0.8);
+    if (clash()) { meta.classList.add('is-compact'); shrink(0.4); }
+  };
+  fit();
+  new ResizeObserver(fit).observe(slide);
+  document.fonts?.ready.then(fit);
+})();
+(() => {
+  const stage = document.querySelector('#hero .op-s1');
+  new IntersectionObserver(([entry]) => entry.isIntersecting ? stage.removeAttribute('data-paused') : stage.setAttribute('data-paused', '')).observe(stage);
+  const slides = [...stage.querySelectorAll('.op-photo img')];
+  const captions = [...stage.querySelectorAll('.op-cap li')];
+  const load = img => { if (img && img.dataset.src) { img.src = img.dataset.src; img.removeAttribute('data-src'); } };
+  load(slides[1]);
+  if (slides.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let current = 0;
+  setInterval(() => {
+    if (stage.hasAttribute('data-paused') || document.hidden) return;
+    slides[current].classList.remove('is-on');
+    current = (current + 1) % slides.length;
+    load(slides[current]); load(slides[(current + 1) % slides.length]);
+    slides[current].classList.add('is-on');
+    captions.forEach((caption, index) => caption.classList.toggle('is-on', String(index) === slides[current].dataset.banner));
+  }, 3800);
+})();
+</script>
+<script data-module="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-module') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-module="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const bar = document.querySelector('#navigation .nav__bar');
+  const offset = bar ? bar.getBoundingClientRect().bottom + 12 : 0;
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -offset } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-module="motion">
+const blurOK = () => matchMedia('(min-width: 1024px) and (hover: hover)').matches;
+const effects = {
+  streak(element, vars = {}) {
+    const dir = vars.dir || (element.dataset.from === 'left' ? -1 : 1);
+    return gsap.timeline(vars.timeline)
+      .fromTo(element, { x: () => dir * Math.min(innerWidth * .22, 320), skewX: -20 * dir, scaleX: 1.15, transformOrigin: dir > 0 ? '100% 50%' : '0% 50%' },
+        { x: 0, skewX: 0, scaleX: 1, duration: 1, ease: vars.ease || 'expo.out', immediateRender: true }, 0)
+      .fromTo(element, { opacity: 0 }, { opacity: 1, duration: .35, ease: 'none', immediateRender: true }, 0);
+  },
+  focus(element, vars = {}) {
+    const blur = blurOK();
+    return gsap.timeline(vars.timeline)
+      .fromTo(element, { scale: 1.14, filter: blur ? 'blur(14px)' : 'none' },
+        { scale: 1, filter: blur ? 'blur(0px)' : 'none', duration: 1.2, ease: 'power3.out', immediateRender: true, clearProps: blur ? 'filter' : '' });
+  },
+  rise(element, vars = {}) {
+    return gsap.timeline(vars.timeline)
+      .fromTo(element.children, { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: .8, stagger: .09, ease: 'power3.out', immediateRender: true });
+  },
+  orbit(element, vars = {}) {
+    const circles = element.querySelectorAll('circle, ellipse');
+    return gsap.timeline(vars.timeline)
+      .fromTo(element, { rotation: -24 }, { rotation: 24, duration: 1, ease: 'none', immediateRender: true }, 0)
+      .fromTo(circles, { strokeDashoffset: 1 }, { autoRound: false, strokeDashoffset: 0, duration: .45, stagger: .05, ease: 'power2.out', immediateRender: true }, 0);
+  }
+};
+const bindings = {
+  streak: element => ({ trigger: element, start: 'top 88%', once: true }),
+  focus: element => ({ trigger: element, start: 'top 85%', once: true }),
+  rise: element => ({ trigger: element, start: 'top 86%', once: true }),
+  orbit: element => ({ trigger: element, start: 'top bottom', end: 'bottom top', scrub: true })
+};
+document.querySelectorAll('[data-section]').forEach(section => {
+  Object.keys(bindings).forEach(name => {
+    const elements = section.querySelectorAll(`[data-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, ...bindings[name](element), animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-module="scene:hero">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', blur: '(min-width: 1024px) and (hover: hover)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('opening');
+    const q = selector => section.querySelector(selector);
+    const vw = f => () => innerWidth * f;
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'opening', trigger: section, start: 'top top', end: () => '+=' + q('.op-s1').offsetHeight, scrub: true, invalidateOnRefresh: true
+    }});
+    timeline
+      .to(q('.op-line--1'), { x: vw(-.6), skewX: 24, scaleX: 1.25, transformOrigin: '100% 50%', duration: .7, ease: 'power1.in' }, 0)
+      .to(q('.op-line--2'), { x: vw(.55), skewX: -24, scaleX: 1.25, transformOrigin: '0% 50%', duration: .66, ease: 'power1.in' }, .03)
+      .to(q('.op-line--3'), { x: vw(-.75), skewX: 24, scaleX: 1.25, transformOrigin: '100% 50%', duration: .62, ease: 'power1.in' }, .06)
+      .to(section.querySelectorAll('.op-line'), { opacity: 0, duration: .2, ease: 'none' }, .5)
+      .to(q('.op-meta'), { y: -40, opacity: 0, duration: .35 }, 0)
+      .to(q('.op-photo'), { scale: 1.3, xPercent: -6, filter: context.conditions.blur ? 'blur(10px)' : 'none', duration: 1 }, 0)
+      .to(q('.op-ring'), { opacity: 0, duration: .5 }, 0)
+      .to(q('.op-slide'), { scale: .8, yPercent: -4, xPercent: 6, duration: 1, ease: 'power1.in' }, 0)
+      .to(q('.op-dim'), { opacity: .78, duration: 1 }, 0)
+      .to(q('.op-ground'), { opacity: 0, duration: 1 }, 0)
+      .fromTo(q('.op-card'), { x: vw(.08), rotation: 2.5 }, { x: 0, rotation: 0, duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(q('.op-title2'), { x: vw(.35), skewX: -24, scaleX: 1.3, transformOrigin: '0% 50%' }, { x: 0, skewX: 0, scaleX: 1, duration: .8, ease: 'expo.out' }, .2)
+      .fromTo(q('.op-orb'), { x: vw(.6), rotation: 300, scale: .4 }, { x: 0, rotation: 0, scale: 1, duration: 1, ease: 'power3.out' }, 0);
+  });
+}, { first: true, id: 'opening' });
+</script>
+<script data-module="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  const status = form.querySelector('.ct-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.checkValidity();
+    status.textContent = ok ? status.dataset.ok : status.dataset.error;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-module="scene:culture">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('culture');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'method', trigger: section.querySelector('.mt-title'), start: 'top 92%', end: 'top 32%', scrub: true, invalidateOnRefresh: true
+    }});
+    section.querySelectorAll('.mt-gap').forEach((gap, index) => {
+      const chip = gap.querySelector('.mt-chip');
+      const after = gap.parentElement.querySelector('.mt-after');
+      const at = index * .16;
+      if (after) {
+        timeline.fromTo(after, { x: () => -gap.offsetWidth }, { x: 0, duration: .45, ease: 'power2.out' }, at);
+      }
+      timeline.fromTo(chip,
+        { x: () => -gap.offsetWidth * 0.5, y: () => -Math.max(gap.offsetWidth * 1.2, 50), rotation: -300, scale: .45, opacity: 0 },
+        { x: 0, y: 0, rotation: 0, scale: 1, opacity: 1, duration: .7, ease: 'power2.inOut' },
+        at + .04
+      );
+    });
+  });
+});
+</script>
+<script data-module="scene:capabilities">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('capabilities');
+    const grid = section.querySelector('.ds-grid');
+    const tiles = [...grid.querySelectorAll('.ds-tile')];
+    const tilt = [-8, 5, -3, 9, -6, 3, -10, 6];
+    const toCentre = (tile, axis) => axis === 'x'
+      ? grid.clientWidth / 2 - (tile.offsetLeft + tile.offsetWidth / 2)
+      : Math.min(grid.clientHeight, innerHeight * .9) / 2 - (tile.offsetTop + tile.offsetHeight / 2);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'disciplines', trigger: grid, start: 'top 88%', end: () => grid.offsetHeight > innerHeight ? 'top 2%' : grid.offsetHeight > innerHeight * .8 ? 'top 38%' : 'center 52%', scrub: true, invalidateOnRefresh: true
+    }});
+    gsap.set(tiles, { zIndex: index => tiles.length - index });
+    tiles.forEach((tile, index) => {
+      timeline.fromTo(tile, {
+        x: () => toCentre(tile, 'x'), y: () => toCentre(tile, 'y'), rotation: tilt[index % tilt.length],
+        scale: () => Math.min(1, 210 / tile.offsetWidth, 240 / tile.offsetHeight)
+      }, { x: 0, y: 0, rotation: 0, scale: 1, duration: .5, ease: 'power2.inOut' }, index * .07);
+    });
+  });
+});
+</script>
+<script data-module="scene:process">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 861px)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('council');
+    const stage = section.querySelector('.lb-stage');
+    const notes = [...section.querySelectorAll('.lb-note')];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'lab', trigger: stage, start: 'top 88%', end: 'center 55%', scrub: true, invalidateOnRefresh: true
+    }});
+    timeline
+      .fromTo(section.querySelector('.lb-lens'), { clipPath: 'circle(7% at 50% 50%)' }, { clipPath: 'circle(50% at 50% 50%)', duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(section.querySelector('.lb-lens img'), { scale: 1.5 }, { scale: 1, duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(section.querySelector('.lb-ring'), { rotation: -140, transformOrigin: '50% 50%' }, { rotation: 0, duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(section.querySelector('.lb-ring circle'), { strokeDashoffset: 1 }, { autoRound: false, strokeDashoffset: 0, duration: .6 }, 0);
+    if (context.conditions.wide) {
+      notes.forEach((note, index) => {
+        const angle = parseFloat(note.style.getPropertyValue('--a')) || 0;
+        timeline.fromTo(note, { '--a': '-90deg', opacity: 0 }, { '--a': `${angle}deg`, opacity: 1, duration: .7, ease: 'power2.out' }, .2 + index * .06);
+      });
+    } else {
+      timeline.fromTo(notes, { x: 48, opacity: 0 }, { x: 0, opacity: 1, duration: .45, stagger: .08, ease: 'power2.out' }, .45);
+    }
+  });
+});
+</script>
+<script data-module="scene:growth">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('approach');
+    const stage = section.querySelector('.wk-stage');
+    const view = section.querySelector('.wk-view');
+    const track = section.querySelector('.wk-track');
+    section.setAttribute('data-scrubbed', '');
+    const distance = () => {
+      const pad = parseFloat(getComputedStyle(view).paddingLeft) || 0;
+      return Math.max(0, track.offsetWidth - (view.clientWidth - pad * 2));
+    };
+    const measure = () => section.style.setProperty('--wk-height', `${stage.offsetHeight + distance()}px`);
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const skewTo = gsap.quickTo(track, 'skewX', { duration: .45, ease: 'power3.out' });
+    const settle = gsap.delayedCall(.14, () => skewTo(0)).pause();
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'growth', trigger: section, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true,
+      onUpdate: self => { skewTo(gsap.utils.clamp(-9, 9, self.getVelocity() / -260)); settle.restart(true); }
+    }})
+      .to(track, { x: () => -distance(), duration: 1 }, 0)
+      .fromTo(section.querySelector('.wk-progress span'), { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0);
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.style.removeProperty('--wk-height');
+      section.removeAttribute('data-scrubbed');
+    };
+  });
+});
+</script>
+<script data-module="scene:faq">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('faq');
+    const rail = section.querySelector('.fq-rail');
+    const ball = section.querySelector('.fq-ball');
+    const travel = () => Math.max(0, rail.clientHeight - ball.offsetHeight);
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'faq', trigger: section.querySelector('.fq-list'), start: 'top 72%', end: 'bottom 72%', scrub: .5, invalidateOnRefresh: true
+    }})
+      .fromTo(ball, { y: 0, rotation: 0 }, { y: travel, rotation: () => travel() / (Math.PI * ball.offsetWidth) * 360, duration: 1 });
+    const items = section.querySelectorAll('.fq-item');
+    const onToggle = () => refreshScroll();
+    items.forEach(item => item.addEventListener('toggle', onToggle));
+    return () => items.forEach(item => item.removeEventListener('toggle', onToggle));
+  });
+});
+</script>
+<script data-module="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const run = section.querySelector('.ct-run');
+    const title = section.querySelector('.ct-title');
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'contact', trigger: run, start: 'top 92%', end: 'top 38%', scrub: true, invalidateOnRefresh: true
+    }})
+      .fromTo(section.querySelector('.ct-line'), { scaleX: () => title.offsetWidth / run.clientWidth }, { scaleX: 1, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(title, { x: () => -(run.clientWidth - title.offsetWidth), skewX: -16 }, { x: 0, skewX: 0, duration: 1, ease: 'power2.inOut' }, 0);
+  });
+});
+</script>
+</body>
+</html>
